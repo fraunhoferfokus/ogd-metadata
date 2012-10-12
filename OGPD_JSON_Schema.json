@@ -1,0 +1,277 @@
+{
+"type": "object", 
+  "description": "JSON Schema Representation of an OGPD prototype dataset/document/app aligned with theCKAN metadata schema", 
+  "properties": {
+    "name": {
+      "required": true, 
+      "description": "Ein für Menschen lesbarer Bezeichner des Datensatzes, des Dokuments oder der Apps, der für eine Identifizierung genutzt werden kann (einfache ASCII-Präsentation des Titels, auch für den pretty-link, Linked Data URIs)",
+      "pattern": "[a-z0-9_-]{2;}", 
+      "type": "string"
+    }, 
+    "title": {
+      "required": true, 
+      "description": "Der Titel beschreibt den Datensatz, das Dokument oder die App prägnant und wird z. B. in Suchergebnissen und Listen angezeigt.",
+      "type": "string"
+    }, 
+    "notes": {
+      "required": true, 
+      "description": "Beschreibung und weitere Informationen zum Datensatz, zum Dokument oder zur App.",
+      "type": "string"
+    }, 
+    "groups": {
+      "required": true, 
+      "description": "Kategorien des Datensatzes, des Dokuments oder der App",
+      "type": "array", 
+      "items": {
+        "enum": ["wirtschaft_arbeit", "transport_verkehr", "umwelt_klima", "geo", "gesundheit", "verbraucher", "infrastruktur_bauen_wohnen", "bildung_wissenschaft", "verwaltung", "gesetze_justiz", "bevoelkerung", "politik_wahlen", "soziales", "kultur_freizeit_sport_tourismus"], 
+        "type": "string", 
+        "description": "Liste der vordefinierten Kategorien"
+      } 
+    },
+    "tags": {
+      "required": false, 
+      "description": "Schlüsselwörter des Datensatzes, des Dokuments oder der App",
+      "items": {
+        "type": "string"
+      }, 
+      "type": "array"
+    },
+    "url": {
+      "required": false, 
+      "description": "Die ursprüngliche Webadresse des Datensatzes, Dokuments oder der App, um zu weiteren Informationen über den Datensatz, das Dokument oder die App zu gelangen.", 
+      "type": "string", 
+      "format": "uri"
+	}, 
+    "resources": {
+      "required": true, 
+      "description": "Folgende Felder können für jede Ressource individuell angegeben werden.",
+      "type": "array", 
+      "items": {
+        "required": true, 
+        "type": "object", 
+        "properties": {
+          "url": {
+            "required": true, 
+            "description": "Verweis auf die eigentliche Datendatei, das Dokument oder die Anwendung.", 
+            "type": "string", 
+            "format": "uri"
+          },
+          "format": {
+            "required": true, 
+            "description": "Typ der Ressource (MIME Types)",
+            "type": "string"
+          },
+          "description": {
+            "required": false, 
+            "description": "Erläuterung, welche Rolle die Ressource für den Datensatz, das Dokument bzw. die App spielt (z. B. ob es sich dabei um eine bestimmte Zeitscheibe oder Schlüsselliste handelt.)",
+            "type": "string"
+          }, 
+          "language": {
+            "required": false, 
+            "description": "Sprache als ISO 639-1-Code, in der die Ressource verfasst ist.",
+            "pattern": "[a-z]{2}", 
+            "type": "string"
+          }, 
+          "hash": {
+            "required": false, 
+            "description": "Bei statischen Dateien die SHA2-Prüfsumme bzw. bei dynamischen Daten ein Zertifikat zur Überprüfung der Integrität.",
+            "type": "string"
+          } 
+        }
+      } 
+    },
+    "extras": {
+      "required": true, 
+      "type": "object", 
+      "description": "Zusaetzliche Angaben", 
+      "properties": {
+     "contacts": {
+         "required": true, 
+         "description": "Liste der Kontakte zu Metadaten, Daten, Dokument bzw. App, mindestens ein Kontakt ist anzugeben, bevorzugt der Ansprechpartner.",
+         "type": "array", 
+         "items": {
+           "type": "object", 
+           "properties": {
+             "role": {
+				"enum": ["veroeffentlichende_stelle", "ansprechpartner", "vertrieb", "autor"], 
+				"type": "string", 
+				"description": "Rolle, die dieser Kontakt für das Metadatum innehat"
+             }, 
+             "name": {
+               "type": "string" 
+             }, 
+             "url": {
+               "type": "string",
+			   "format": "uri"
+			 }, 
+             "email": {
+               "type": "string" 
+             }, 
+             "address": {
+               "type": "string"
+             } 
+           }
+         }
+    },
+    "dates": {
+         "required": true, 
+         "description": "Erstellungs-, Veröffentlichungs- und Aktualisierungsdaten von Daten, Dokumenten, Apps und ihren Metadaten.",
+         "type": "array", 
+         "items": {
+           "type": "object", 
+           "properties": {
+             "role": {
+			"enum": ["erstellt", "veroeffentlicht", "aktualisiert"], 
+               "type": "string", 
+               "description": "Rolle, die dieses Datum für den Datensatz spielt"
+             }, 
+             "date": {
+               "type": "string", 
+               "format": "date-time"
+             } 
+           }
+         }
+    },
+    "terms_of_use": {
+          "required": true, 
+          "description": "Festlegung der spezifischen Nutzungsbestimmungen des Datensatzes, des Dokuments oder der App.", 
+          "type": "object", 
+          "properties": {
+        	"license_id": {
+        	  "enum": ["apache", "bsd-license", "cc-by", "cc-by-sa", "cc-nc", "cc-zero", "gfdl", "gpl-3.0", "mit-license", "mozilla", "mozilla1.1", "odc-odbl", "notspecified", "app-OpenSource", "app-Freeware", "app-kommerziell"
+        	  ], 
+        	  "type": "string", 
+        	  "description": "Lizenz aus einer festen Liste."
+        	}, 
+        	"other": {
+        	  "type": "string", 
+        	  "description": "Freitext, der die Nutzungsbestimmungen festlegt, falls diese keiner allgemein bekannten Lizenz entsprechen."
+        	}, 
+        	"license_url": {
+        	  "type": "string", 
+        	  "description": "URL, auf der die Lizenz des Datensatzes, Dokuments oder der App beschrieben und erklärt ist.", 
+        	  "format": "uri"
+        	},
+        	"is_free_to_use": {
+        	  "type": "string", 
+        	  "description": "Die Information, ob der Datensatz/das Dokument/die App kostenfrei und zweckoffen ist (muss gesetzt werden, wenn Freitext bei der Lizenzangabe genutzt wird).", 
+        	  "format": "uri"
+        	}
+          }
+    },
+    "content_type": {
+        "required": true, 
+        "description": "Zeigt an, ob ein Datensatz, ein Dokument, eine App beschrieben wird", 
+        "type": "string", 
+        "enum": ["datensatz", "dokument", "app"]
+    }, 
+    "subgroups": {
+          "required": false, 
+          "description": "Hier werden die Unterkategorien für die Datensätze und Dokumente aufgelistet. Im Gegensatz zu den Kategorien werden hier genau die (fachlichen) Kategorien der Datenbereitsteller genutzt, d.h. jeder neu angeschlossene Datenbereitsteller kann hier benötigte Unterkategorien hinzufügen.",
+          "type": "array", 
+          "items": {
+            "description": "Unterkategorien des Datensatzes, des Dokuments oder der App",
+            "enum": [""], 
+            "type": "string"
+          } 
+    },
+    "metadata_original_portal": {
+          "required": false, 
+          "description": "URL des Portals, von dem der Metadateneintrag des Datensatzes oder des Dokuments geharvestet wurde.", 
+          "type": "string", 
+          "format": "uri"
+    }, 
+    "metadata_original_id": {
+          "required": false, 
+          "description": "Der Identifier des ursprünglichen Metadateneintrags der Datensätze oder der Dokumente. Damit kann schnell die Originalposition von geharvesteten Datensätzen oder Dokumenten nachvollzogen und Dubletten erkannt werden.",
+          "type": "string"
+    }, 
+    "metadata_original_xml": {
+          "required": false, 
+          "description": "URL des Original-Metadateneintrags in der urspruenglichen Form.", 
+          "type": "string", 
+          "format": "uri"
+    }, 
+    "metadata_original_html": {
+          "required": false, 
+          "description": "URL des Original-Metadateneintrags in der HTML-Represantationsform.", 
+          "type": "string", 
+          "format": "uri"
+    },
+    "spatial": {
+          "required": false, 
+          "description": "Die geographische Abdeckung des Datensatzes in WGS 84 Koordinaten nach GeoJSON http://geojson.org", 
+          "type": "object", 
+          "properties": {
+            "type": {
+              "type": "string",
+              "description": "Art der Form",
+              "enum": ["polygon"]
+            }, 
+            "coordinates": {
+              "type": "array",
+              "description": "Liste der Koordinaten",
+              "items": {
+                "type": "array", 
+                "description": "Koordinaten in der Reihenfolge x, y",
+                "items": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+    }, 
+    "spatial-text": {
+          "required": false, 
+          "description": "Abgedecktes Gebiets, wenn möglich der Amtliche Gemeindeschlüssel", 
+          "type": "string"
+    }, 
+    "geographical_granularity": {
+          "required": false, 
+          "description": "Die geographische Granularität des Datensatzes, eines Dokuments, einer App.", 
+          "enum": ["bund", "land", "kommune", "stadt"],
+          "type": "string"
+    }, 
+    "temporal_coverage_from": {
+          "required": false, 
+          "description": "Der Zeitpunkt, von dem an der Datensatz, das Dokument oder die App einschließlich Daten enthält.", 
+          "type": "string", 
+          "format": "date-time"
+    }, 
+    "temporal_coverage_to": {
+          "required": false, 
+          "description": "Der Zeitpunkt, bis zu dem der Datensatz, das Dokument oder die App einschließlich Daten enthält.", 
+          "type": "string", 
+          "format": "date-time"
+    }, 
+    "temporal_granularity": {
+          "required": false, 
+          "description": "Die zeitliche Auflösung der enthaltenen Daten, des Dokuments oder der App.", 
+          "type": "string", 
+          "enum": ["sekunde", "minute", "stunde", "tag", "woche", "monat", "quartal", "jahr", "5-jahre"]
+    },
+    "used_datasets": {
+          "required": false, 
+          "description": "Die verwendeten Datensätze von Dokumenten und Apps mithilfe einer Liste mit URLs auf Metadaten.",
+          "type": "array", 
+          "items": {
+            "type": "string", 
+            "format": "uri"
+          }
+    }, 
+    "sector": {
+          "required": false, 
+          "description": "Zeigt an, ob eine App oder ein Dokument aus dem öffentlichem, dem privaten oder einem anderen Bereich kommt.", 
+          "enum": ["oeffentlich", "privat", "andere"],
+          "type": "string"
+    }, 
+    "ogdd_version": {
+          "required": false, 
+          "description": "Zeigt an, in welcher Version der OGDD Metadaten-Struktur das Metadatum geschrieben ist", 
+          "enum": ["v1.0"],
+          "type": "string"
+    }
+      }
+    }
+  } 
+}

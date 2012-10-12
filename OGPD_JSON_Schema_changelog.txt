@@ -1,0 +1,22 @@
+2012-09-25 /prototyp/doc/metadaten/120925-post-harvesting-workshop.pdf eingearbeitet, insb.
+  - kontakte als liste mit rollenbezeichner
+  - nicht-ckan-core-felder in extras verschoben
+  - deutsche beschreibungen weitgehend aus folien übernommen
+  - geographical coverage - bzw. Amtlicher Gemeindeschlüsssel
+
+2012-10-07
+- die Kategorien stimmten nicht mit dem letzten Stand ueberein --> aktualisiert
+- notes waren sowohl object als auch string --> nur noch strings
+- fuer Adress- und Datumsangaben habe ich enums eingefuehrt
+- fuer URLs etc. habe ich uri als Format angegeben
+- es haben required-Angaben fuer Datum und Kontakt gefehlt, daher sind nicht alle extras optional - habe die mandatories nach oben gezogen
+- da die Extras bei CKAN eh anders sind, habe ich sie fuer die OGDD Definition rausgenommen - so wird auch die Struktur einfacher und die Abbildung auf CKAN muss eh gemacht werden.
+- einige Erläuterungen waren noch auf Englisch --> uebersetzt
+- ich habe nach den Diskussion in Wien noch ein optionales Feld fuer die Version der Metadaten-Struktur aufgenommen 
+- ein jedes Hauptfeld faengt nun mit required ja/nein und description an
+
+2012-10-10
+- nicht-ckan-core-felder wieder in extras verschoben
+- enum URL-freundliche Bezeichner, kleingeschrieben
+- spatial und spatial-text statt geographical-coverage und regional-coverage
+ 
