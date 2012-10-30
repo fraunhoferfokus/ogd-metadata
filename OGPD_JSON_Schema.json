@@ -20,7 +20,7 @@
     }, 
     "groups": {
       "required": true, 
-      "description": "Kategorien des Datensatzes, des Dokuments oder der App",
+      "description": "Kategorien für die Datensätze und Dokumente. Die Kategorien sind statisch und werden vom Portalbetreiber langfristig gepflegt. Zusätzlich können mit subgroups fachspezifische Unterkategorien beispielsweise aus INSPIRE oder EVAS genutzt werden.",
       "type": "array", 
       "items": {
         "enum": ["wirtschaft_arbeit", "transport_verkehr", "umwelt_klima", "geo", "gesundheit", "verbraucher", "infrastruktur_bauen_wohnen", "bildung_wissenschaft", "verwaltung", "gesetze_justiz", "bevoelkerung", "politik_wahlen", "soziales", "kultur_freizeit_sport_tourismus"], 
@@ -98,16 +98,20 @@
 				"description": "Rolle, die dieser Kontakt für das Metadatum innehat"
              }, 
              "name": {
+			   "description": "Name der Person oder Funktion"
                "type": "string" 
              }, 
              "url": {
+			   "description": "Webseite des Kontakts"
                "type": "string",
 			   "format": "uri"
 			 }, 
              "email": {
+			   "description": "Email-Adresse des Kontakts"
                "type": "string" 
              }, 
              "address": {
+			   "description": "Postalische Adresse des Kontakts"
                "type": "string"
              } 
            }
@@ -126,6 +130,7 @@
                "description": "Rolle, die dieses Datum für den Datensatz spielt"
              }, 
              "date": {
+               "description": "Das Kalender-Datum"
                "type": "string", 
                "format": "date-time"
              } 
@@ -167,7 +172,7 @@
     }, 
     "subgroups": {
           "required": false, 
-          "description": "Hier werden die Unterkategorien für die Datensätze und Dokumente aufgelistet. Im Gegensatz zu den Kategorien werden hier genau die (fachlichen) Kategorien der Datenbereitsteller genutzt, d.h. jeder neu angeschlossene Datenbereitsteller kann hier benötigte Unterkategorien hinzufügen.",
+          "description": "Unterkategorien für die Datensätze und Dokumente. Im Gegensatz zu den Kategorien werden hier genau die (fachlichen) Kategorien der Datenbereitsteller genutzt, d.h. jeder neu angeschlossene Datenbereitsteller kann hier benötigte Unterkategorien hinzufügen.",
           "type": "array", 
           "items": {
             "description": "Unterkategorien des Datensatzes, des Dokuments oder der App",
@@ -205,7 +210,7 @@
           "properties": {
             "type": {
               "type": "string",
-              "description": "Art der Form",
+              "description": "Art der Form: Hier ist zunächst nur Polygon vorgesehen, andere waeren vorstellbar.",
               "enum": ["polygon"]
             }, 
             "coordinates": {
@@ -265,9 +270,9 @@
           "enum": ["oeffentlich", "privat", "andere"],
           "type": "string"
     }, 
-    "ogdd_version": {
+    "ogd_version": {
           "required": false, 
-          "description": "Zeigt an, in welcher Version der OGDD Metadaten-Struktur das Metadatum geschrieben ist", 
+          "description": "Zeigt an, in welcher Version der OGD Metadaten-Struktur das Metadatum geschrieben ist.", 
           "enum": ["v1.0"],
           "type": "string"
     }
