@@ -1,0 +1,16 @@
+{
+  "apache": "Apache Software License", 
+  "app_commercial": "Andere Kommerzielle Lizenz",
+  "app_freeware": "Andere kostenfreie Lizenz", 
+  "app_opensource": "Andere Open Source Lizenz", 
+  "bsd-license": "New and Simplified BSD Licenses", 
+  "cc-by": "Creative Commons Namensnennung", 
+  "cc-by-sa": "Creative Commons Weitergabe unter gleichen Bedingungen", 
+  "cc-nc": "Creative Commons Nicht-Kommerziell", 
+  "cc-zero": "Creative Commons Zero", 
+  "gfdl": "GNU Free Documentation License", 
+  "gpl-3.0": "GNU General Public License version 3.0 (GPLv3)", 
+  "mozilla": "Mozilla Public License 1.0 (MPL)", 
+  "notspecified": "Keine Angabe", 
+  "odc-odbl": "Open Data Commons Open Database License "
+}
