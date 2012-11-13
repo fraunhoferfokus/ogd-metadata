@@ -5,7 +5,7 @@
     "name": {
       "required": true, 
       "description": "Ein für Menschen lesbarer Bezeichner des Datensatzes, des Dokuments oder der Apps, der für eine Identifizierung genutzt werden kann (einfache ASCII-Präsentation des Titels, auch für den pretty-link, Linked Data URIs)",
-      "pattern": "[a-z0-9_-]{2,}", 
+      "pattern": "^[a-z0-9_-]{2,}$", 
       "type": "string"
     }, 
     "title": {
@@ -69,7 +69,7 @@
           "language": {
             "required": false, 
             "description": "Sprache als ISO 639-1-Code, in der die Ressource verfasst ist.",
-            "pattern": "[a-z]{2}", 
+            "pattern": "^[a-z]{2}$", 
             "type": "string"
           }, 
           "hash": {
