@@ -5,7 +5,7 @@
     "name": {
       "required": true, 
       "description": "Ein für Menschen lesbarer Bezeichner des Datensatzes, des Dokuments oder der Apps, der für eine Identifizierung genutzt werden kann (einfache ASCII-Präsentation des Titels, auch für den pretty-link, Linked Data URIs)",
-      "pattern": "[a-z0-9_-]{2;}", 
+      "pattern": "[a-z0-9_-]{2,}", 
       "type": "string"
     }, 
     "title": {
