@@ -98,20 +98,20 @@
 				"description": "Rolle, die dieser Kontakt für das Metadatum innehat"
              }, 
              "name": {
-			   "description": "Name der Person oder Funktion"
+			   "description": "Name der Person oder Funktion",
                "type": "string" 
              }, 
              "url": {
-			   "description": "Webseite des Kontakts"
+			   "description": "Webseite des Kontakts",
                "type": "string",
 			   "format": "uri"
 			 }, 
              "email": {
-			   "description": "Email-Adresse des Kontakts"
+			   "description": "Email-Adresse des Kontakts",
                "type": "string" 
              }, 
              "address": {
-			   "description": "Postalische Adresse des Kontakts"
+			   "description": "Postalische Adresse des Kontakts",
                "type": "string"
              } 
            }
@@ -130,7 +130,7 @@
                "description": "Rolle, die dieses Datum für den Datensatz spielt"
              }, 
              "date": {
-               "description": "Das Kalender-Datum"
+               "description": "Das Kalender-Datum",
                "type": "string", 
                "format": "date-time"
              } 
