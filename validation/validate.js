@@ -16,15 +16,20 @@ fs.readFile('../OGPD_JSON_Schema.json',function(err,schema) {
   fs.readFile(target_file, function(err,data) {
     if(err) throw err;
     // Parse as JSON
-    var posts = JSON.parse(data);
+    var packages = JSON.parse(data);
+    if (!Array.isArray(packages)){packages=[packages]}
     var schemajs= JSON.parse(schema);
     // Validate
     var env = JSV.createEnvironment();
-    var report = env.validate(posts, schemajs);
-    // Echo to command line
-    console.log(target_file + ": " + report.errors.length + " error(s)");
-    if (report.errors.length > 0) {
-      console.log(report.errors);
+    var report;
+    for (var p in packages){
+      var dataset = packages[p];
+      report = env.validate(dataset, schemajs);
+      // Echo to command line
+      console.log(dataset["name"] + ": " + report.errors.length + " error(s)");
+      if (report.errors.length > 0) {
+        console.log(report.errors);
+      }
     }
   });
 });
