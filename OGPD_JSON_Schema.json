@@ -42,6 +42,12 @@
       "type": "string", 
       "format": "uri"
 	}, 
+    "type": {
+        "required": true, 
+        "description": "Zeigt an, ob ein Datensatz, ein Dokument, eine App beschrieben wird", 
+        "type": "string", 
+        "enum": ["datensatz", "dokument", "app"]
+    }, 
     "resources": {
       "required": true, 
       "description": "Folgende Felder können für jede Ressource individuell angegeben werden.",
@@ -164,12 +170,6 @@
         	}
           }
     },
-    "content_type": {
-        "required": true, 
-        "description": "Zeigt an, ob ein Datensatz, ein Dokument, eine App beschrieben wird", 
-        "type": "string", 
-        "enum": ["datensatz", "dokument", "app"]
-    }, 
     "subgroups": {
           "required": false, 
           "description": "Unterkategorien für die Datensätze und Dokumente. Im Gegensatz zu den Kategorien werden hier genau die (fachlichen) Kategorien der Datenbereitsteller genutzt, d.h. jeder neu angeschlossene Datenbereitsteller kann hier benötigte Unterkategorien hinzufügen.",

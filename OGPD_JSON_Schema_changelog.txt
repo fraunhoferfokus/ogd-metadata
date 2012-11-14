@@ -19,4 +19,6 @@
 - nicht-ckan-core-felder wieder in extras verschoben
 - enum URL-freundliche Bezeichner, kleingeschrieben
 - spatial und spatial-text statt geographical-coverage und regional-coverage
- 
+
+2012-11-14
+- Feld content_type umbenannt in type und nach oben in Hauptebene verschoben.
