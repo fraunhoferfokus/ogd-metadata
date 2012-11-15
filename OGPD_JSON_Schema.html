@@ -1,26 +1,14 @@
-<html>
 
-<head>
+<html><head>
 <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
 <style type="text/css">
 <!--
 td {vertical-align:top;}
-
 -->
 </style>
-
-</head>
-
-<body>
-
-
+</head><body>
 <table border=1 cellpadding=0 cellspacing=0  style="empty-cells:show;vertical-align:top">
- <col >
- <col  span=3>
- <col >
- <col >
- <col >
- <col >
+ <col > <col  span=3><col ><col ><col ><col >
  <tr>
   <th rowspan=2 >Metadaten Eintrag</th>
   <th colspan=3 >JSON Bezeichner</th>
@@ -35,507 +23,84 @@ td {vertical-align:top;}
   <th >2. Ebene</th>
   <th >3. Ebene</th>
  </tr>
- <tr>
-  <td >Titel</td>
-  <td >title</td>
-  <td ></td>
-  <td ></td>
-  <td >X</td>
-  <td >String</td>
-  <td ></td>
-  <td >Der Titel beschreibt den
-  Datensatz, das Dokument oder die App prägnant und wird z. B. in
-  Suchergebnissen und Listen angezeigt.</td>
- </tr>
- <tr>
-  <td >Bezeichner</td>
-  <td >name</td>
-  <td ></td>
-  <td ></td>
-  <td >X</td>
-  <td >String</td>
-  <td >[a-z0-9_-]{2;}</td>
-  <td >Ein für Menschen lesbarer
-  Bezeichner des Datensatzes, des Dokuments oder der Apps, der für eine
-  Identifizierung genutzt werden kann (einfache ASCII-Präsentation des Titels,
-  auch für den pretty-link)</td>
- </tr>
- <tr>
-  <td >Beschreibung</td>
-  <td >notes</td>
-  <td ></td>
-  <td ></td>
-  <td >X</td>
-  <td >String</td>
-  <td ></td>
-  <td >Beschreibung und weitere
-  Informationen zum Datensatz, zum Dokument oder zur App.</td>
- </tr>
- <tr>
-  <td >Kategorie</td>
-  <td >group</td>
-  <td ></td>
-  <td ></td>
-  <td >X</td>
-  <td >Liste von String</td>
-  <td >Enum aus: siehe Kategorien
-  Tabelle</td>
-  <td >Kategorien für die Datensätze und Dokumente. Die Kategorien sind statisch und werden vom Portalbetreiber langfristig gepflegt. Zusätzlich können mit subgroups fachspezifische Unterkategorien beispielsweise aus INSPIRE oder EVAS genutzt werden.</td>
- </tr>
- <tr>
-  <td >Schlagwörter</td>
-  <td >tags</td>
-  <td ></td>
-  <td ></td>
-  <td ></td>
-  <td >Liste von String</td>
-  <td ></td>
-  <td >Mit frei wählbaren
-  Schlagwörtern können hier Datensätze,
-  Dokumente und Apps beschrieben werden, um diese leichter mit der Suche
-  ausfindig machen zu können.</td>
- </tr>
- <tr>
-  <td >Webadresse
-  zu weiteren Informationen über den Datensatz</td>
-  <td >url</td>
-  <td ></td>
-  <td ></td>
-  <td ></td>
-  <td >String</td>
-  <td >URI</td>
-  <td >Die ursprüngliche
-  Webadresse des Datensatzes, Dokuments oder der App, um zu weiteren
-  Informationen über den Datensatz, das Dokument oder die App zu gelangen.</td>
- </tr>
- <tr>
-  <td >Typ
-  des Inhalts</td>
-  <td >content_type</td>
-  <td ></td>
-  <td ></td>
-  <td >X</td>
-  <td >String</td>
-  <td >Enum: datensatz, dokument, app</td>
-  <td >technisches Feld, welches
-  definiert ob sich der Metadateneintrag auf einen Datensatz, ein Dokument oder
-  eine App bezieht.</td>
- </tr>
- <tr>
-  <td >Ressourcen</td>
-  <td rowspan=6 >resources</td>
-  <td ></td>
-  <td ></td>
-  <td >X</td>
-  <td >Liste von Object</td>
-  <td ></td>
-  <td >Folgende Felder können für
-  jede Ressource individuell angegeben werden:</td>
- </tr>
- <tr>
-  <td >URL</td>
-  <td >url</td>
-  <td ></td>
-  <td >X</td>
-  <td >String</td>
-  <td >URI</td>
-  <td >Verweis auf die eigentliche
-  Datendatei, das Dokument oder die Anwendung.</td>
- </tr>
- <tr>
-  <td >Format</td>
-  <td >format</td>
-  <td ></td>
-  <td >X</td>
-  <td >String</td>
-  <td ></td>
-  <td >Typ der Ressource (MIME
-  Types)</td>
- </tr>
- <tr>
-  <td >Beschreibung</td>
-  <td >description</td>
-  <td ></td>
-  <td ></td>
-  <td >String</td>
-  <td ></td>
-  <td >Erläuterung, welche Rolle
-  die Ressource für den Datensatz, das Dokument bzw. die App spielt (z. B. ob
-  es sich dabei um eine bestimmte Zeitscheibe oder Schlüsselliste handelt.)</td>
- </tr>
- <tr>
-  <td >Sprache</td>
-  <td >language</td>
-  <td ></td>
-  <td ></td>
-  <td >String</td>
-  <td >[a-z]{2}</td>
-  <td >Sprache als ISO 639-1-Code,
-  in der die Ressource verfasst ist.</td>
- </tr>
- <tr>
-  <td >Überprüfung</td>
-  <td >hash</td>
-  <td ></td>
-  <td ></td>
-  <td >String</td>
-  <td ></td>
-  <td >Bei statischen Dateien die
-  SHA2-Prüfsumme bzw. bei dynamischen Daten ein Zertifikat zur Überprüfung der
-  Integrität</td>
- </tr>
- <tr>
-  <td ></td>
-  <td rowspan=31 >Extras</td>
-  <td ></td>
-  <td ></td>
-  <td ></td>
-  <td ></td>
-  <td ></td>
-  <td >Folgende Felder können für
-  jeden Datensatz individuell angegeben werden:</td>
- </tr>
- <tr>
-  <td >Kontaktliste</td>
-  <td rowspan=6 >contacts</td>
-  <td ></td>
-  <td >X</td>
-  <td >Liste von Object</td>
-  <td ></td>
-  <td >Liste der Kontakte zu
-  Metadaten, Daten, Dokument bzw. App, mindestens ein Kontakt ist anzugeben,
-  bevorzugt der Ansprechpartner</td>
- </tr>
- <tr>
-  <td >Name</td>
-  <td >name</td>
-  <td ></td>
-  <td >String</td>
-  <td ></td>
-  <td >Name der Person oder Funktion</td>
- </tr>
- <tr>
-  <td >Adressinformation</td>
-  <td >address<span
- > </span></td>
-  <td ></td>
-  <td >String</td>
-  <td ></td>
-  <td >Postalische Adresse des Kontakts</td>
- </tr>
- <tr>
-  <td >Website</td>
-  <td >url</td>
-  <td ></td>
-  <td >String</td>
-  <td >URI</td>
-  <td >Webseite des Kontakts</td>
- </tr>
- <tr>
-  <td >Email</td>
-  <td >email</td>
-  <td ></td>
-  <td >String</td>
-  <td ></td>
-  <td >Email-Adresse des Kontakts</td>
- </tr>
- <tr>
-  <td >Rolle</td>
-  <td >role</td>
-  <td ></td>
-  <td >String</td>
-  <td >Enum aus: veroeffentlichende_stelle, ansprechpartner, vertrieb, autor</td>
-</td>
-  <td >Rolle, die dieser Kontakt
-  für den Datensatz spielt, z.B. Autor, Vertrieb, Veröffentlichende Stelle,
-  Ansprechpartner</td>
- </tr>
- <tr>
-  <td >Datumsangaben</td>
-  <td rowspan=3 >dates</td>
-  <td ></td>
-  <td >X</td>
-  <td >Liste von Object</td>
-  <td ></td>
-  <td >Erstellungs-, Veröffentlichungs- und Aktualisierungsdaten von Daten, Dokumenten, Apps und ihren Metadaten</td>
- </tr>
- <tr>
-  <td >Rolle</td>
-  <td >role</td>
-  <td ></td>
-  <td >String</td>
-  <td >Enum: erstellt,
-  veroeffentlicht, aktualisiert</td>
-  <td >Beschreibt um was für ein Datum es sich handelt</td>
- </tr>
- <tr>
-  <td >Datum</td>
-  <td >date</td>
-  <td ></td>
-  <td >String</td>
-  <td >date-time</td>
-  <td >Das Kalender-Datum</td>
- </tr>
- <tr>
-  <td >Nutzungsbestimmungen</td>
-  <td rowspan=5 >terms_of_use</td>
-  <td ></td>
-  <td >X</td>
-  <td ></td>
-  <td ></td>
-  <td >Festlegung der spezifischen
-  Nutzungsbestimmungen des Datensatzes, des Dokuments oder der App.</td>
- </tr>
- <tr>
-  <td >Lizenz-Bezeichnung</td>
-  <td >license_id</td>
-  <td ></td>
-  <td >String</td>
-  <td >Enum aus: LizenzID Tabelle</td>
-  <td >Lizenz aus einer festen
-  Liste</td>
- </tr>
- <tr>
-  <td >URL
-  Lizenz-Bezeichnung</td>
-  <td >license_url</td>
-  <td ></td>
-  <td >String</td>
-  <td >URI</td>
-  <td >URL, auf der die Lizenz des
-  Datensatzes, Dokuments oder der App beschrieben und erklärt ist</td>
- </tr>
- <tr>
-  <td >Freitext
-  zur Beschreibung</td>
-  <td >other</td>
-  <td ></td>
-  <td >String</td>
-  <td ></td>
-  <td >Freitext, der die
-  Nutzungsbestimmungen festlegt, falls diese keiner allgemein bekannten Lizenz
-  entsprechen.</td>
- </tr>
- <tr>
-  <td >Nutzungsfreiheit</td>
-  <td >is_free_to_use</td>
-  <td ></td>
-  <td >String</td>
-  <td >URI</td>
-  <td >Die Information, ob der
-  Datensatz/das Dokument/die App kostenfrei und zweckoffen ist (muss gesetzt
-  werden, wenn Freitext bei der Lizenzangabe genutzt wird)</td>
- </tr>
- <tr>
-  <td >Unterkategorien</td>
-  <td >subgroups</td>
-  <td ></td>
-  <td ></td>
-  <td >Liste von String</td>
-  <td ></td>
-  <td >Hier werden die
-  Unterkategorien für die Datensätze und Dokumente aufgelistet. Im Gegensatz zu
-  den Kategorien werden diese genau den fachlichen Kategorien der
-  Datenbereitsteller angeglichen, d.h. jeder neu angeschlossene
-  Datenbereitsteller kann hier benötigte Unterkategorien hinzufügen.</td>
- </tr>
- <tr>
-  <td >Original-Metadaten-Portal</td>
-  <td >metadata_original_portal</td>
-  <td ></td>
-  <td ></td>
-  <td >String</td>
-  <td >URI</td>
-  <td >URL des Portals, von dem
-  der Metadateneintrag des Datensatzes oder des Dokuments geharvestet wurde.</td>
- </tr>
- <tr>
-  <td >Original-Metadaten-Schlüssel</td>
-  <td >metadata_original_id</td>
-  <td ></td>
-  <td ></td>
-  <td >String</td>
-  <td ></td>
-  <td >Der Identifier des
-  ursprünglichen Metadateneintrags der Datensätze oder der Dokumente. Damit
-  kann schnell die Originalposition von geharvesteten Datensätzen oder
-  Dokumenten nachvollzogen und Dubletten erkannt werden. ["technisches"Feld] !UUID!</td>
- </tr>
- <tr>
-  <td >URL
-  des Original-Metadaten-Eintrags auf die XML-Strukturen</td>
-  <td >metadata_original_xml</td>
-  <td ></td>
-  <td ></td>
-  <td >String</td>
-  <td >URI</td>
-  <td >URL des Portals, von dem
-  der Metadateneintrag des Datensatzes oder des Dokuments geharvestet wurde. ["technisches" Feld]!XML!</td>
- </tr>
- <tr>
-  <td >URL
-  auf Repräsentation des Original-Metadaten-Eintrags</td>
-  <td >metadata_original_html</td>
-  <td ></td>
-  <td ></td>
-  <td >String</td>
-  <td >URI</td>
-  <td >Präsentations-URL des
-  Portals, von dem der Metadateneintrag des Datensatzes oder des Dokuments
-  geharvestet wurde. [„technisches“<span> 
-  </span>Feld]!HTML!</td>
- </tr>
- <tr>
-  <td >Geographische Abdeckung in Koordinaten</td>
-  <td rowspan=3 >spatial</td>
-  <td ></td>
-  <td ></td>
-  <td >Object</td>
-  <td ></td>
-  <td >Die geographische Abdeckung
-  des Datensatzes in WGS 84 Koordinaten nach GeoJSON http://geojson.org</td>
- </tr>
- <tr>
-  <td ></td>
-  <td >type</td>
-  <td ></td>
-  <td >String</td>
-  <td >Enum: Polygon</td>
-  <td >Art der Form: Hier ist zunächst nur Polygon vorgesehen, andere waeren vorstellbar.</td>
- </tr>
- <tr>
-  <td ></td>
-  <td >coordinates</td>
-  <td ></td>
-  <td >Array aus NumberArrays</td>
-  <td >[x,y]</td>
-  <td >Liste der Koordinaten.
-  Koordinaten wiederum Arrays in der Reihenfolge x, y ( [[x1,y1], [x2,y2])</td>
- </tr>
- <tr>
-  <td >Geographische
-  Abdeckung als Text</td>
-  <td >spatial-text</td>
-  <td ></td>
-  <td ></td>
-  <td >String</td>
-  <td ></td>
-  <td >Abgedecktes Gebiets, wenn
-  möglich der Amtliche Gemeindeschlüssel</td>
- </tr>
- <tr>
-  <td >Geographische
-  Granularität</td>
-  <td >geographical_granularity</td>
-  <td ></td>
-  <td ></td>
-  <td >String</td>
-  <td >Enum: bund, land, kommune,
-  Stadt</td>
-  <td >Die geographische
-  Granularität des Datensatzes, eines Dokuments, einer App</td>
- </tr>
- <tr>
-  <td >Zeitraum
-  von</td>
-  <td >temporal_coverage_from</td>
-  <td ></td>
-  <td ></td>
-  <td >String</td>
-  <td >date-time</td>
-  <td >Der Zeitpunkt, von dem an
-  der Datensatz, das Dokument oder die App einschließlich Daten enthält</td>
- </tr>
- <tr>
-  <td >Zeitraum
-  bis</td>
-  <td >temporal_coverage_to</td>
-  <td ></td>
-  <td ></td>
-  <td >String</td>
-  <td >date-time</td>
-  <td >Der Zeitpunkt, bis zu dem
-  der Datensatz, das Dokument oder die App einschließlich Daten enthält</td>
- </tr>
- <tr>
-  <td >zeitliche
-  Granularität</td>
-  <td >temporal_granularity</td>
-  <td ></td>
-  <td ></td>
-  <td >String</td>
-  <td >Enum: sekunde, minute,
-  stunde, tag, woche, monat, quartal, jahr, 5-jahre</td>
-  <td >Die zeitliche Auflösung der
-  enthaltenen Daten, des Dokuments oder der App</td>
- </tr>
- <tr>
-  <td >URL
-  zu verwendeten Daten</td>
-  <td >used_datasets</td>
-  <td ></td>
-  <td ></td>
-  <td >StringArray</td>
-  <td >URI</td>
-  <td >Die verwendeten Datensätze
-  von Dokumenten und Apps mithilfe einer Liste mit URLs auf Metadaten</td>
- </tr>
- <tr>
-  <td >Sektor</td>
-  <td >sector</td>
-  <td ></td>
-  <td ></td>
-  <td >String</td>
-  <td >Enum: oeffentlich, privat,
-  andere</td>
-  <td >Zeigt an, ob eine App oder
-  ein Dokument aus dem öffentlichem, dem privaten oder einem anderen Bereich
-  kommt. [Feld wird nur für Dokumente und Apps genutzt]</td>
- </tr>
- <tr>
-  <td >OGD Version</td>
-  <td >ogd_version</td>
-  <td ></td>
-  <td ></td>
-  <td >String</td>
-  <td >date-time</td>
-  <td >Zeigt an, in welcher Version der OGD Metadaten-Struktur das Metadatum geschrieben ist.</td>
- </tr>
-</table>
 
-<br/>
+<tr><td rowspan="1">Name</td><td rowspan="1">name</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">X</td><td rowspan="1">String</td><td rowspan="1">^[a-z0-9_-]{2,}$</td><td rowspan="1">Ein für Menschen lesbarer Bezeichner des Datensatzes, des Dokuments oder der Apps, der für eine Identifizierung genutzt werden kann (einfache ASCII-Präsentation des Titels, auch für den pretty-link, Linked Data URIs)</td></tr>
+<tr><td rowspan="1">Titel</td><td rowspan="1">title</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">X</td><td rowspan="1">String</td><td rowspan="1"></td><td rowspan="1">Der Titel beschreibt den Datensatz, das Dokument oder die App prägnant und wird z. B. in Suchergebnissen und Listen angezeigt.</td></tr>
+<tr><td rowspan="1">Beschreibung</td><td rowspan="1">notes</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">X</td><td rowspan="1">String</td><td rowspan="1"></td><td rowspan="1">Beschreibung und weitere Informationen zum Datensatz, zum Dokument oder zur App.</td></tr>
+<tr><td rowspan="1">Kategorien</td><td rowspan="1">groups</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">X</td><td rowspan="1">Liste von String</td><td rowspan="1">Enum aus: wirtschaft_arbeit, transport_verkehr, umwelt_klima, geo, gesundheit, verbraucher, infrastruktur_bauen_wohnen, bildung_wissenschaft, verwaltung, gesetze_justiz, bevoelkerung, politik_wahlen, soziales, kultur_freizeit_sport_tourismus</td><td rowspan="1">Kategorien für die Datensätze und Dokumente. Die Kategorien sind statisch und werden vom Portalbetreiber langfristig gepflegt, s.u. bzw. <a href='https://github.com/fraunhoferfokus/ogd-metadata/blob/master/kategorien/deutschland.json'>Liste</a></td></tr>
+<tr><td rowspan="1">Schlagwörter</td><td rowspan="1">tags</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">Liste von String</td><td rowspan="1"></td><td rowspan="1">Freie Schlüsselwörter des Datensatzes, des Dokuments oder der App</td></tr>
+<tr><td rowspan="1">Website</td><td rowspan="1">url</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">URI</td><td rowspan="1">Die ursprüngliche Webadresse des Datensatzes, Dokuments oder der App, um zu weiteren Informationen über den Datensatz, das Dokument oder die App zu gelangen.</td></tr>
+<tr><td rowspan="1">Typ</td><td rowspan="1">type</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">X</td><td rowspan="1">String</td><td rowspan="1">Enum aus: datensatz, dokument, app</td><td rowspan="1">Zeigt an, ob ein Datensatz, ein Dokument, eine App beschrieben wird</td></tr>
+<tr><td rowspan="1">Ressourcen</td><td rowspan="6">resources</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">X</td><td rowspan="1">Liste von Object</td><td rowspan="1"></td><td rowspan="1">Folgende Felder können für jede Ressource individuell angegeben werden.</td></tr>
+<tr><td rowspan="1">URL</td><td rowspan="1">url</td><td rowspan="1"></td><td rowspan="1">X</td><td rowspan="1">String</td><td rowspan="1">URI</td><td rowspan="1">Verweis auf die eigentliche Datendatei, das Dokument oder die Anwendung.</td></tr>
+<tr><td rowspan="1">Format</td><td rowspan="1">format</td><td rowspan="1"></td><td rowspan="1">X</td><td rowspan="1">String</td><td rowspan="1"></td><td rowspan="1">Typ der Ressource (MIME Types)</td></tr>
+<tr><td rowspan="1">Beschreibung</td><td rowspan="1">description</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1"></td><td rowspan="1">Erläuterung, welche Rolle die Ressource für den Datensatz, das Dokument bzw. die App spielt (z. B. ob es sich dabei um eine bestimmte Zeitscheibe oder Schlüsselliste handelt.)</td></tr>
+<tr><td rowspan="1">Sprache</td><td rowspan="1">language</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">^[a-z]{2}$</td><td rowspan="1">Sprache als ISO 639-1-Code, in der die Ressource verfasst ist.</td></tr>
+<tr><td rowspan="1">Prüfsumme</td><td rowspan="1">hash</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1"></td><td rowspan="1">Bei statischen Dateien die SHA2-Prüfsumme bzw. bei dynamischen Daten ein Zertifikat zur Überprüfung der Integrität.</td></tr>
+<tr><td rowspan="1">Extras</td><td rowspan="31">extras</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">X</td><td rowspan="1">Object</td><td rowspan="1"></td><td rowspan="1">Zusaetzliche Angaben</td></tr>
+<tr><td rowspan="1">Kontakte</td><td rowspan="6">contacts</td><td rowspan="1"></td><td rowspan="1">X</td><td rowspan="1">Liste von Object</td><td rowspan="1"></td><td rowspan="1">Liste der Kontakte zu Metadaten, Daten, Dokument bzw. App, mindestens ein Kontakt ist anzugeben, bevorzugt der Ansprechpartner.</td></tr>
+<tr><td rowspan="1">Rolle</td><td rowspan="1">role</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">Enum aus: veroeffentlichende_stelle, ansprechpartner, vertrieb, autor</td><td rowspan="1">Rolle, die dieser Kontakt für das Metadatum innehat</td></tr>
+<tr><td rowspan="1">Name</td><td rowspan="1">name</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1"></td><td rowspan="1">Name der Person oder Funktion</td></tr>
+<tr><td rowspan="1">Website</td><td rowspan="1">url</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">URI</td><td rowspan="1">Webseite des Kontakts</td></tr>
+<tr><td rowspan="1">Email</td><td rowspan="1">email</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1"></td><td rowspan="1">Email-Adresse des Kontakts</td></tr>
+<tr><td rowspan="1">Adresse</td><td rowspan="1">address</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1"></td><td rowspan="1">Postalische Adresse des Kontakts</td></tr>
+<tr><td rowspan="1">Kalender-Daten</td><td rowspan="3">dates</td><td rowspan="1"></td><td rowspan="1">X</td><td rowspan="1">Liste von Object</td><td rowspan="1"></td><td rowspan="1">Erstellungs-, Veröffentlichungs- und Aktualisierungsdaten von Daten, Dokumenten, Apps und ihren Metadaten.</td></tr>
+<tr><td rowspan="1">Rolle</td><td rowspan="1">role</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">Enum aus: erstellt, veroeffentlicht, aktualisiert</td><td rowspan="1">Rolle, die dieses Datum für den Datensatz spielt</td></tr>
+<tr><td rowspan="1">Datum</td><td rowspan="1">date</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">date-time</td><td rowspan="1">Das Kalender-Datum</td></tr>
+<tr><td rowspan="1">Nutzungsbestimmungen</td><td rowspan="5">terms_of_use</td><td rowspan="1"></td><td rowspan="1">X</td><td rowspan="1">Object</td><td rowspan="1"></td><td rowspan="1">Festlegung der spezifischen Nutzungsbestimmungen des Datensatzes, des Dokuments oder der App.</td></tr>
+<tr><td rowspan="1">Lizenz-ID</td><td rowspan="1">license_id</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">Enum aus: apache, bsd-license, cc-by, cc-by-sa, cc-nc, cc-zero, gfdl, gpl-3.0, mit-license, mozilla, mozilla1.1, odc-odbl, notspecified, app-OpenSource, app-Freeware, app-kommerziell</td><td rowspan="1">Lizenz aus einer festen Liste, s.u. bzw. <a href='https://github.com/fraunhoferfokus/ogd-metadata/blob/master/lizenzen/deutschland.json'>Liste</a></td></tr>
+<tr><td rowspan="1">Freitext</td><td rowspan="1">other</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1"></td><td rowspan="1">Freitext, der die Nutzungsbestimmungen festlegt, falls diese keiner allgemein bekannten Lizenz entsprechen.</td></tr>
+<tr><td rowspan="1">URL</td><td rowspan="1">license_url</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">URI</td><td rowspan="1">URL, auf der die Lizenz des Datensatzes, Dokuments oder der App beschrieben und erklärt ist.</td></tr>
+<tr><td rowspan="1">Nutzungsfreiheit</td><td rowspan="1">is_free_to_use</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">URI</td><td rowspan="1">Die Information, ob der Datensatz/das Dokument/die App kostenfrei und zweckoffen ist (muss gesetzt werden, wenn Freitext bei der Lizenzangabe genutzt wird).</td></tr>
+<tr><td rowspan="1">Unterkategorien</td><td rowspan="1">subgroups</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">Liste von String</td><td rowspan="1"></td><td rowspan="1">Unterkategorien für die Datensätze und Dokumente. Im Gegensatz zu den Kategorien werden hier genau die (fachlichen) Kategorien der Datenbereitsteller genutzt, d.h. jeder neu angeschlossene Datenbereitsteller kann hier benötigte Unterkategorien hinzufügen,  beispielsweise aus INSPIRE oder EVAS. Vgl.  <a href='https://github.com/fraunhoferfokus/ogd-metadata/blob/master/kategorien/'>Liste</a></td></tr>
+<tr><td rowspan="1">Original-Metadaten-Portal</td><td rowspan="1">metadata_original_portal</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">URI</td><td rowspan="1">URL des Portals, von dem der Metadateneintrag des Datensatzes oder des Dokuments geharvestet wurde.</td></tr>
+<tr><td rowspan="1">Original-Metadaten-Schlüssel</td><td rowspan="1">metadata_original_id</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1"></td><td rowspan="1">Der Identifier des ursprünglichen Metadateneintrags der Datensätze oder der Dokumente. Damit kann schnell die Originalposition von geharvesteten Datensätzen oder Dokumenten nachvollzogen und Dubletten erkannt werden.</td></tr>
+<tr><td rowspan="1">Original-Metadaten-XML</td><td rowspan="1">metadata_original_xml</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">URI</td><td rowspan="1">URL des Original-Metadateneintrags in der urspruenglichen Form.</td></tr>
+<tr><td rowspan="1">Original-Metadaten-HTML</td><td rowspan="1">metadata_original_html</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">URI</td><td rowspan="1">URL des Original-Metadateneintrags in der HTML-Represantationsform.</td></tr>
+<tr><td rowspan="1">Abdeckung in Koordinaten</td><td rowspan="3">spatial</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">Object</td><td rowspan="1"></td><td rowspan="1">Die geographische Abdeckung des Datensatzes in WGS 84 Koordinaten nach GeoJSON http://geojson.org</td></tr>
+<tr><td rowspan="1">Art der Form</td><td rowspan="1">type</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">Enum aus: polygon</td><td rowspan="1">Hier ist zunächst nur Polygon vorgesehen, andere waeren vorstellbar.</td></tr>
+<tr><td rowspan="1">Koordinaten Liste der Koordinaten</td><td rowspan="1">coordinates</td><td rowspan="1"></td><td rowspan="1">Liste von Array</td><td rowspan="1"></td><td rowspan="1">Koordinaten Liste der Koordinaten</td></tr>
+<tr><td rowspan="1">Abdeckung als Text</td><td rowspan="1">spatial-text</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1"></td><td rowspan="1">Abgedecktes Gebiets, wenn möglich der Amtliche Gemeindeschlüssel</td></tr>
+<tr><td rowspan="1">Räumliche Auflösung</td><td rowspan="1">geographical_granularity</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">Enum aus: bund, land, kommune, stadt</td><td rowspan="1">Die geographische Granularität des Datensatzes, eines Dokuments, einer App.</td></tr>
+<tr><td rowspan="1">Start-Datum</td><td rowspan="1">temporal_coverage_from</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">date-time</td><td rowspan="1">Der Zeitpunkt, von dem an der Datensatz, das Dokument oder die App einschließlich Daten enthält.</td></tr>
+<tr><td rowspan="1">End-Datum</td><td rowspan="1">temporal_coverage_to</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">date-time</td><td rowspan="1">Der Zeitpunkt, bis zu dem der Datensatz, das Dokument oder die App einschließlich Daten enthält.</td></tr>
+<tr><td rowspan="1">Zeitliche Auflösung</td><td rowspan="1">temporal_granularity</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">Enum aus: sekunde, minute, stunde, tag, woche, monat, quartal, jahr, 5-jahre</td><td rowspan="1">Die zeitliche Auflösung der enthaltenen Daten, des Dokuments oder der App.</td></tr>
+<tr><td rowspan="1">Verwendete Datensätze</td><td rowspan="1">used_datasets</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">Liste von String</td><td rowspan="1">URI</td><td rowspan="1">Die verwendeten Datensätze von Dokumenten und Apps mithilfe einer Liste mit URLs auf Metadaten.</td></tr>
+<tr><td rowspan="1">Sektor</td><td rowspan="1">sector</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">Enum aus: oeffentlich, privat, andere</td><td rowspan="1">Zeigt an, ob eine App oder ein Dokument aus dem öffentlichem, dem privaten oder einem anderen Bereich kommt.</td></tr>
+<tr><td rowspan="1">Sturktur-Version</td><td rowspan="1">ogd_version</td><td rowspan="1"></td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">Enum aus: v1.0</td><td rowspan="1">Zeigt an, in welcher Version der OGD Metadaten-Struktur das Metadatum geschrieben ist.</td></tr>
 
-<table border=1 cellpadding=0 cellspacing=0
+</table></body></html>
+
+<p><table border=1 cellpadding=0 cellspacing=0
  style='border-collapse:collapse;table-layout:fixed'>
  <col>
 <tr><th colspan='2'>Kategorien</th></tr> 
 <tr><th>ID</th><th>Titel</th></tr> 
-<tr><td>bevoelkerung</td><td>Bevölkerung</td></tr> 
-<tr><td>bildung_wissenschaft</td><td>Bildung und Wissenschaft</td></tr> 
-<tr><td>geo</td><td>Geographie, Geologie und Geobasisdaten</td></tr> 
-<tr><td>gesetze_justiz</td><td>Gesetze und Justiz</td></tr> 
-<tr><td>gesundheit</td><td>Gesundheit </td></tr> 
-<tr><td>infrastruktur_bauen_wohnen</td><td>Infrastruktur, Bauen und Wohnen</td></tr> 
-<tr><td>kultur_freizeit_sport_tourismus</td><td>Kultur, Freizeit, Sport und Tourismus</td></tr> 
-<tr><td>politik_wahlen</td><td>Politik und Wahlen</td></tr> 
-<tr><td>soziales</td><td>Soziales</td></tr> 
-<tr><td>transport_verkehr</td><td>Transport und Verkehr</td></tr> 
-<tr><td>umwelt_klima</td><td>Umwelt und Klima"
-<tr><td>verbraucher</td><td>Verbraucherschutz </td></tr> 
-<tr><td>verwaltung</td><td>Öffentliche Verwaltung, Haushalt und Steuern</td></tr> 
+<tr><td>bevoelkerung</td><td>Bevölkerung</td></tr>
+<tr><td>bildung_wissenschaft</td><td>Bildung und Wissenschaft</td></tr>
+<tr><td>geo</td><td>Geographie, Geologie und Geobasisdaten</td></tr>
+<tr><td>gesetze_justiz</td><td>Gesetze und Justiz</td></tr>
+<tr><td>gesundheit</td><td>Gesundheit</td></tr>
+<tr><td>infrastruktur_bauen_wohnen</td><td>Infrastruktur, Bauen und Wohnen</td></tr>
+<tr><td>kultur_freizeit_sport_tourismus</td><td>Kultur, Freizeit, Sport und Tourismus</td></tr>
+<tr><td>politik_wahlen</td><td>Politik und Wahlen</td></tr>
+<tr><td>soziales</td><td>Soziales</td></tr>
+<tr><td>transport_verkehr</td><td>Transport und Verkehr</td></tr>
+<tr><td>umwelt_klima</td><td>Umwelt und Klima</td></tr>
+<tr><td>verbraucher</td><td>Verbraucherschutz</td></tr>
+<tr><td>verwaltung</td><td>Öffentliche Verwaltung, Haushalt und Steuern</td></tr>
 <tr><td>wirtschaft_arbeit</td><td>Wirtschaft und Arbeit</td></tr>
+
 </table>
 
-<br/>
 
-
-<table border=1 cellpadding=0 cellspacing=0
+<p><table border=1 cellpadding=0 cellspacing=0
  style='border-collapse:collapse;table-layout:fixed'>
  <col>
 <tr><th colspan='2'>Lizenzen</th></tr> 
 <tr><th>ID</th><th>Titel</th></tr> 
 <tr><td>apache</td><td>Apache Software License</td></tr>
-<tr><td>app_commercial</td><td>Andere Kommerzielle Lizenz</td></tr>
+<tr><td>app_commercial</td><td>Andere kommerzielle Lizenz</td></tr>
 <tr><td>app_freeware</td><td>Andere kostenfreie Lizenz</td></tr>
 <tr><td>app_opensource</td><td>Andere Open Source Lizenz</td></tr>
 <tr><td>bsd-license</td><td>New and Simplified BSD Licenses</td></tr>
@@ -548,9 +113,6 @@ td {vertical-align:top;}
 <tr><td>mozilla</td><td>Mozilla Public License 1.0 (MPL)</td></tr>
 <tr><td>notspecified</td><td>Keine Angabe</td></tr>
 <tr><td>odc-odbl</td><td>Open Data Commons Open Database License</td></tr>
+
 </table>
-
-</body>
-
-</html>
 
