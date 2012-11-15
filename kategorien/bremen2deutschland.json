@@ -1,0 +1,16 @@
+{
+	"bevoelkerung": ["bevoelkerung"],
+	"bildung": ["bevoelkerung"],
+	"geografie": ["geo"],
+	"gesundheit": ["gesundheit"],
+	"infrastruktur": ["infrastruktur_bauen_wohnen"],
+	"justiz": ["gesetze_justiz"],
+	"kultur": ["kultur_freizeit_sport_tourismus"],
+	"politik": ["politik_wahlen"],
+	"sozial": ["soziales"],
+	"transport": ["transport_verkehr"],
+	"umwelt": ["umwelt_klima"],
+	"verbraucher": ["verbraucher"],
+	"verwaltung": ["verwaltung"],
+	"wirtschaft": ["wirtschaft_arbeit"]
+}
