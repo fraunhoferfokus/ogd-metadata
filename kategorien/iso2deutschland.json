@@ -1,0 +1,20 @@
+{
+"farming": ["wirtschaft_arbeit"],
+"biota": ["umwelt_klima"],
+"boundaries": ["geografie"],
+"climatologyMeteorologyAtmosphere": ["umwelt_klima"],
+"economy": ["wirtschaft_arbeit"],
+"elevation": ["geo"],
+"environment": ["umwelt_klima"],
+"geoscientificInformation": ["geo"],
+"health": ["gesundheit"],
+"imageryBaseMapsEarthCover": ["geo"],
+"location": ["geografie"],
+"oceans": ["geo"],
+"planningCadastre": ["geografie"],
+"society": ["Demographie"],
+"structure": ["stadtplanung"],
+"transportation": ["transport_verkehr"],
+"utilitiesCommunication": ["infrastruktur_bauen_wohnen"],
+"inlandWaters": ["geo"]
+}
