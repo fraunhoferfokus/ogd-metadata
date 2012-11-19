@@ -1,34 +1,49 @@
 import json, urllib2
 
-class Util:
+class Translator:
+	map = {}
+	
+	def __init__(self, sourceportal):
+		filename = "../kategorien/" + sourceportal + "2deutschland.json"
+		self.map = json.loads( open(filename, 'r').read())
+	
+	def translate(self, categories=[]):
+		out = []
+		if not categories:
+			return out 
+		for cat in categories:
+			if cat in self.map.keys():
+				out = out + self.map[cat]
+		return out
 
-    def translate(self, categories, sourceportal):
-        url = "https://github.com/fraunhoferfokus/ogd-metadata/raw/master/kategorien/" + sourceportal + "2deutschland.json"
-        map = json.loads( urllib2.urlopen(url).read())
-        out = []
-        for cat in categories:
-            if cat in map.keys():
-                out = out + map[cat]
-        return out
 
 
 import unittest
 class TestMapping(unittest.TestCase):
+	@classmethod
+	def setUpClass(cls):
+		cls.u = Translator('berlin')
+	
+	def test_b2d(self):
+		translated = self.u.translate(['verkehr','wahl'])
+		print translated
+		self.assertEqual(translated, ['transport_verkehr','politik_wahlen'])
 
-    
-    def test_b2d(self):
-        u = Util()
-        translated = u.translate(['verkehr','wahl'], 'berlin')
-        print translated
-        self.assertEqual(translated, ['transport_verkehr','politik_wahlen'])
+	def test_missing(self):
+		translated = self.u.translate(['verkehr','xyz','wahl'])
+		print translated
+		self.assertEqual(translated, ['transport_verkehr','politik_wahlen'])
 
-    def test_missing(self):
-        u = Util()
-        translated = u.translate(['verkehr','xyz','wahl'], 'berlin')
-        print translated
-        self.assertEqual(translated, ['transport_verkehr','politik_wahlen'])
+	def test_empty(self):
+		translated = self.u.translate()
+		print translated
+		self.assertEqual(translated, [])
 
+	def test_none(self):
+		translated = self.u.translate(None)
+		print translated
+		self.assertEqual(translated, [])
 
 if __name__ == '__main__':
-    unittest.main()
-    
+	unittest.main()
+	
