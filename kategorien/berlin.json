@@ -1,0 +1,22 @@
+{
+  "wirtschaft":"Wirtschaft",
+  "transport":"Transport und Verkehr",
+  "umwelt":"Umwelt und Klima",
+  "verentsorgung":"Ver- und Entsorgung",
+  "geo":"Geographie und Stadtplanung",
+  "gesundheit":"Gesundheit ",
+  "verbraucher":"Verbraucherschutz ",
+  "sicherheit":"Öffentliche Sicherheit",
+  "wohnen":"Wohnen und Immobilien",
+  "bildung":"Bildung",
+  "verwaltung":"Öffentliche Verwaltung, Haushalt und Steuern",
+  "justiz":"Gesetze und Justiz",
+  "demographie":"Demographie",
+  "arbeit":"Arbeitsmarkt",
+  "wahl":"Wahlen",
+  "sozial":"Sozialleistungen",
+  "kultur":"Kunst und Kultur",
+  "erholung":"Sport und Erholung",
+  "tourismus":"Tourismus",
+  "sonstiges":"Sonstiges"
+}
