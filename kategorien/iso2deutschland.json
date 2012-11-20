@@ -12,7 +12,7 @@
 "location": ["geo"],
 "oceans": ["geo"],
 "planningCadastre": ["geo"],
-"society": ["demographie", "infrastruktur_bauen_wohnen"],
+"society": ["bevoelkerung", "infrastruktur_bauen_wohnen"],
 "structure": ["infrastruktur_bauen_wohnen"],
 "transportation": ["transport_verkehr"],
 "utilitiesCommunication": ["infrastruktur_bauen_wohnen"],
