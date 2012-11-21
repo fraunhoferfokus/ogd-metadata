@@ -22,3 +22,7 @@
 
 2012-11-14
 - Feld content_type umbenannt in type und nach oben in Hauptebene verschoben.
+
+2012-11-21
+- Lizenzliste korrigiert: notspecified gestrichen, other-open und other-closed eingeführt für andere freie und eingeschränkte Bestimmungen.
+

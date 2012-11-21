@@ -149,7 +149,7 @@
           "type": "object", 
           "properties": {
         	"license_id": {
-        	  "enum": ["apache", "bsd-license", "cc-by", "cc-by-sa", "cc-nc", "cc-zero", "gfdl", "gpl-3.0", "mit-license", "mozilla", "mozilla1.1", "odc-odbl", "notspecified", "app-OpenSource", "app-Freeware", "app-kommerziell"
+        	  "enum": ["apache", "bsd-license", "cc-by", "cc-by-sa", "cc-nc", "cc-zero", "gfdl", "gpl-3.0", "mit-license", "mozilla", "mozilla1.1", "odc-odbl", "other-closed", "other-open", "app-OpenSource", "app-Freeware", "app-kommerziell"
         	  ], 
         	  "type": "string", 
               "required": false, 

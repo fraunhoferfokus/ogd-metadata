@@ -48,7 +48,7 @@ td {vertical-align:top;}
 <tr><td rowspan="1">Rolle</td><td rowspan="1">role</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">Enum aus: erstellt, veroeffentlicht, aktualisiert</td><td rowspan="1">Rolle, die dieses Datum für den Datensatz spielt</td></tr>
 <tr><td rowspan="1">Datum</td><td rowspan="1">date</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">date-time</td><td rowspan="1">Das Kalender-Datum</td></tr>
 <tr><td rowspan="1">Nutzungsbestimmungen</td><td rowspan="5">terms_of_use</td><td rowspan="1"></td><td rowspan="1">X</td><td rowspan="1">Object</td><td rowspan="1"></td><td rowspan="1">Festlegung der spezifischen Nutzungsbestimmungen des Datensatzes, des Dokuments oder der App.</td></tr>
-<tr><td rowspan="1">Lizenz-ID</td><td rowspan="1">license_id</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">Enum aus: apache, bsd-license, cc-by, cc-by-sa, cc-nc, cc-zero, gfdl, gpl-3.0, mit-license, mozilla, mozilla1.1, odc-odbl, notspecified, app-OpenSource, app-Freeware, app-kommerziell</td><td rowspan="1">Lizenz aus einer festen Liste, s.u. bzw. <a href='https://github.com/fraunhoferfokus/ogd-metadata/blob/master/lizenzen/deutschland.json'>Liste</a></td></tr>
+<tr><td rowspan="1">Lizenz-ID</td><td rowspan="1">license_id</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">Enum aus: apache, bsd-license, cc-by, cc-by-sa, cc-nc, cc-zero, gfdl, gpl-3.0, mit-license, mozilla, mozilla1.1, odc-odbl, other-closed, other-open, app-OpenSource, app-Freeware, app-kommerziell</td><td rowspan="1">Lizenz aus einer festen Liste, s.u. bzw. <a href='https://github.com/fraunhoferfokus/ogd-metadata/blob/master/lizenzen/deutschland.json'>Liste</a></td></tr>
 <tr><td rowspan="1">Freitext</td><td rowspan="1">other</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1"></td><td rowspan="1">Freitext, der die Nutzungsbestimmungen festlegt, falls diese keiner allgemein bekannten Lizenz entsprechen.</td></tr>
 <tr><td rowspan="1">URL</td><td rowspan="1">license_url</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">URI</td><td rowspan="1">URL, auf der die Lizenz des Datensatzes, Dokuments oder der App beschrieben und erklärt ist.</td></tr>
 <tr><td rowspan="1">Nutzungsfreiheit</td><td rowspan="1">is_free_to_use</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">URI</td><td rowspan="1">Die Information, ob der Datensatz/das Dokument/die App kostenfrei und zweckoffen ist (muss gesetzt werden, wenn Freitext bei der Lizenzangabe genutzt wird).</td></tr>
@@ -100,19 +100,20 @@ td {vertical-align:top;}
 <tr><th colspan='2'>Lizenzen</th></tr> 
 <tr><th>ID</th><th>Titel</th></tr> 
 <tr><td>apache</td><td>Apache Software License</td></tr>
-<tr><td>app_commercial</td><td>Andere kommerzielle Lizenz</td></tr>
-<tr><td>app_freeware</td><td>Andere kostenfreie Lizenz</td></tr>
-<tr><td>app_opensource</td><td>Andere Open Source Lizenz</td></tr>
+<tr><td>app_commercial</td><td>Andere kommerzielle Lizenz (nur für Anwendungen)</td></tr>
+<tr><td>app_freeware</td><td>Andere kostenfreie Lizenz (nur für Anwendungen)</td></tr>
+<tr><td>app_opensource</td><td>Andere Open Source Lizenz (nur für Anwendungen)</td></tr>
 <tr><td>bsd-license</td><td>New and Simplified BSD Licenses</td></tr>
 <tr><td>cc-by</td><td>Creative Commons Namensnennung</td></tr>
 <tr><td>cc-by-sa</td><td>Creative Commons Weitergabe unter gleichen Bedingungen</td></tr>
-<tr><td>cc-nc</td><td>Creative Commons Nicht-Kommerziell</td></tr>
+<tr><td>cc-nc</td><td>Creative Commons Nicht-Kommerziell (eingeschränkte Lizenz)</td></tr>
 <tr><td>cc-zero</td><td>Creative Commons Zero</td></tr>
 <tr><td>gfdl</td><td>GNU Free Documentation License</td></tr>
 <tr><td>gpl-3.0</td><td>GNU General Public License version 3.0 (GPLv3)</td></tr>
 <tr><td>mozilla</td><td>Mozilla Public License 1.0 (MPL)</td></tr>
-<tr><td>notspecified</td><td>Keine Angabe</td></tr>
 <tr><td>odc-odbl</td><td>Open Data Commons Open Database License</td></tr>
+<tr><td>other-closed</td><td>Andere eingeschränkte Lizenz</td></tr>
+<tr><td>other-open</td><td>Andere freie Lizenz</td></tr>
 
 </table>
 
