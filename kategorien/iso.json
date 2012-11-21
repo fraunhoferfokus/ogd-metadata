@@ -1,0 +1,20 @@
+{
+"biota": "Biologie",
+"boundaries": "Grenzen",
+"climatologyMeteorologyAtmosphere": "Athmosphäre",
+"economy": "Wirtschaft",
+"elevation": "Höhenangaben",
+"environment": "Umwelt",
+"farming": "Landwirtschaft",
+"geoscientificInformation": "Geowissenschaften",
+"health": "Gesundheitswesen",
+"imageryBaseMapsEarthCover": "Oberflächenbeschreibung",
+"inlandWaters": "Binnengewässer"
+"location": "Ortsangaben",
+"oceans": "Meere",
+"planningCadastre": "Planungsunterlagen,Kataster",
+"society": "Gesellschaft",
+"structure": "Bauwerke",
+"transportation": "Verkehrswesen",
+"utilitiesCommunication": "Ver- und Entsorgung,Kommunikation",
+}
