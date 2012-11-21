@@ -8,6 +8,8 @@ class Translator:
 		self.map = json.loads( open(filename, 'r').read())
 	
 	def translate(self, categories=[]):
+		if not isinstance(categories, list):
+			categories = [categories]
 		out = []
 		if not categories:
 			return out 
@@ -28,6 +30,11 @@ class TestMapping(unittest.TestCase):
 		translated = self.u.translate(['verkehr','wahl'])
 		print translated
 		self.assertEqual(translated, ['transport_verkehr','politik_wahlen'])
+
+	def test_atom(self):
+		translated = self.u.translate('verkehr')
+		print translated
+		self.assertEqual(translated, ['transport_verkehr'])
 
 	def test_missing(self):
 		translated = self.u.translate(['verkehr','xyz','wahl'])
