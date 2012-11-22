@@ -5,8 +5,11 @@ Metadata structure and documentation to be used by the German Open Government Pl
 
 Die Idee hinter diesem Artikel ist hier beschrieben: http://open-data.fokus.fraunhofer.de/?p=643
 
-Eine lesbare HTML Ansicht findet sich hier: http://htmlpreview.github.com/?https://github.com/fraunhoferfokus/ogd-metadata/blob/master/OGPD_JSON_Schema.html
+Es existiert eine [lesbare HTML Ansicht][ogdm-html]
 
 Relevante Links zur CKAN-Dokumentation:
  * Domain Model: http://docs.ckan.org/en/ckan-1.8/domain-model.html
  * CKAN Logic Code: https://github.com/okfn/ckan/blob/master/ckan/logic/schema.py
+ 
+ 
+[ogdm-html]: http://htmlpreview.github.com/?https://github.com/fraunhoferfokus/ogd-metadata/blob/master/OGPD_JSON_Schema.html
