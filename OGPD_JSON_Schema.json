@@ -4,7 +4,7 @@
   "properties": {
     "name": {
       "required": true, 
-      "description": "Name: Ein für Menschen lesbarer Bezeichner des Datensatzes, des Dokuments oder der Apps, der für eine Identifizierung genutzt werden kann (einfache ASCII-Präsentation des Titels, auch für die Pretty-Link-URL, Linked Data URIs)",
+      "description": "Name: Ein für Menschen lesbarer Bezeichner des Datensatzes, des Dokuments oder der Apps, der für eine Identifizierung genutzt werden kann (einfache ASCII-Präsentation des Titels, auch für die Pretty-Link-URL, Linked Data URIs)",
       "pattern": "^[a-z0-9_-]{2,}$", 
       "type": "string"
     }, 
@@ -149,7 +149,7 @@
           "type": "object", 
           "properties": {
         	"license_id": {
-        	  "enum": ["apache", "bsd-license", "cc-by", "cc-by-sa", "cc-nc", "cc-zero", "gfdl", "gpl-3.0", "mit-license", "mozilla", "mozilla1.1", "odc-odbl", "other-closed", "other-open", "app-OpenSource", "app-Freeware", "app-kommerziell"
+        	  "enum": ["apache", "bsd-license", "cc-by", "cc-by-sa", "cc-nc", "cc-zero", "gfdl", "gpl-3.0", "mit-license", "mozilla", "mozilla1.1", "odc-odbl", "other-closed", "other-open", "app_openSource", "app_freeware", "app_kommerziell"
         	  ], 
         	  "type": "string", 
               "required": false, 
@@ -167,16 +167,15 @@
         	  "format": "uri"
         	},
         	"is_free_to_use": {
-        	  "type": "string", 
+        	  "type": "boolean", 
               "required": false, 
-        	  "description": "Nutzungsfreiheit: Die Information, ob der Datensatz/das Dokument/die App kostenfrei und zweckoffen ist (muss gesetzt werden, wenn Freitext bei der Lizenzangabe genutzt wird).", 
-        	  "format": "uri"
+        	  "description": "Nutzungsfreiheit: Die Information, ob der Datensatz/das Dokument/die App kostenfrei und zweckoffen ist (muss gesetzt werden, wenn Freitext bei der Lizenzangabe genutzt wird)."
         	}
           }
     },
     "subgroups": {
           "required": false, 
-          "description": "Unterkategorien: Unterkategorien für die Datensätze und Dokumente. Im Gegensatz zu den Kategorien werden hier genau die (fachlichen) Kategorien der Datenbereitsteller genutzt, d.h. jeder neu angeschlossene Datenbereitsteller kann hier benötigte Unterkategorien hinzufügen,  beispielsweise aus INSPIRE oder EVAS. Vgl.  <a href='https://github.com/fraunhoferfokus/ogd-metadata/blob/master/kategorien/'>Liste</a>. Unterkategorien werden auch für die Navigation und für Filter genutzt.",
+          "description": "Unterkategorien: Unterkategorien für die Datensätze und Dokumente. Im Gegensatz zu den Kategorien werden hier genau die (fachlichen) Kategorien der Datenbereitsteller genutzt, d.h. jeder neu angeschlossene Datenbereitsteller kann hier benötigte Unterkategorien hinzufügen,  beispielsweise aus INSPIRE oder EVAS. Vgl.  <a href='https://github.com/fraunhoferfokus/ogd-metadata/blob/master/kategorien/'>Liste</a>. Unterkategorien werden auch für die Navigation und für Filter genutzt.",
           "type": "array", 
           "items": {
             "description": "Unterkategorien: Unterkategorien des Datensatzes, des Dokuments oder der App",
