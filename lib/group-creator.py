@@ -24,7 +24,7 @@ pp=pprint.PrettyPrinter(indent=4)
 
 filename = "../kategorien/" + args.domain + ".json"
 groups = json.loads( open(filename, 'r').read())
-transl = groupmap.Translator('bremen')
+transl = groupmap.Translator(args.domain)
 
 for gid in groups.iterkeys():
 	group_entity = {
@@ -34,13 +34,14 @@ for gid in groups.iterkeys():
 	if not 'deutschland' == args.domain:
 		group_entity['type'] = 'subgroup'
 
-	try:
-		ckan.group_register_post(group_entity)
-	except:
-		traceback.print_exc()
+# 	try:
+# 		ckan.group_register_post(group_entity)
+# 	except:
+# 		traceback.print_exc()
 
 	if not 'deutschland' == args.domain:
 		for supergroupname in transl.translate(gid):
+			print supergroupname
 			supergroup =  ckan.group_entity_get(supergroupname)
 			supergroup['groups'] = [{'name':gid}] + supergroup['groups']
 			try:
