@@ -34,17 +34,18 @@ for gid in groups.iterkeys():
 	if not 'deutschland' == args.domain:
 		group_entity['type'] = 'subgroup'
 
-# 	try:
-# 		ckan.group_register_post(group_entity)
-# 	except:
-# 		traceback.print_exc()
+	try:
+		ckan.group_register_post(group_entity)
+		print 'ok: ' + gid
+	except:
+		traceback.print_exc()
 
 	if not 'deutschland' == args.domain:
 		for supergroupname in transl.translate(gid):
-			print supergroupname
 			supergroup =  ckan.group_entity_get(supergroupname)
 			supergroup['groups'] = [{'name':gid}] + supergroup['groups']
 			try:
 				ckan.group_register_post(supergroup)
+				print 'ok: ' + supergroupname
 			except:
 				traceback.print_exc()
