@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf8 -*-
 import sys,json,collections,string
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -122,6 +123,22 @@ def listBody(list):
 		out.append('<tr><td>{0}</td><td>{1}</td></tr>\n'.format(id,title))
 	return ''.join(out)
 
+def listLicenseTable(list):
+	out = ["""
+<p><table border=1 cellpadding=0 cellspacing=0
+ style='border-collapse:collapse;table-layout:fixed'>
+ <col>
+<tr><th colspan='4'>Lizenzen</th></tr> 
+<tr><th>ID</th><th>Titel</th><th>Klassifizierung</th><th>Für Daten/Inhalte</th><th>Für Apps</th></tr>
+"""]
+	for license in list:
+		is_open         = 'offen' if license['is_osi_compliant'] or license['is_okd_compliant'] else 'eingeschränkt'
+		domain_data     = 'X' if license['domain_content'] or license['domain_data'] else ''
+		domain_software = 'X' if license['domain_software'] else ''
+		out.append('<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td></tr>\n'.format(license['id'],license['title'],is_open,domain_data,domain_software))
+	out.append('</table>')
+	return ''.join(out)
+
 f=open('kategorien/deutschland.json', 'r')
 kat=json.loads( f.read(), object_pairs_hook=collections.OrderedDict)
 f.close()
@@ -130,5 +147,5 @@ listTable('Kategorien', listBody(kat))
 f=open('lizenzen/deutschland.json', 'r')
 licences=json.loads( f.read(), object_pairs_hook=collections.OrderedDict)
 f.close()
-listTable('Lizenzen', listBody(licences))
+print listLicenseTable(licences)
 
