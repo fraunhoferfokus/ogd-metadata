@@ -50,7 +50,7 @@
     }, 
     "resources": {
       "required": true, 
-      "description": "Ressourcen: Folgende Felder können für jede Ressource individuell angegeben werden.",
+      "description": "Ressourcen: Folgende Felder können für jede Ressource individuell angegeben werden.",
       "type": "array", 
       "items": {
         "required": true, 
@@ -69,7 +69,7 @@
           },
           "description": {
             "required": false, 
-            "description": "Beschreibung: Erläuterung, welche Rolle die Ressource für den Datensatz, das Dokument bzw. die App spielt (z. B. ob es sich dabei um eine bestimmte Zeitscheibe oder Schlüsselliste handelt. Der Beschreibungstext, wird mit dem Link zur Ressource unterlegt.)",
+            "description": "Beschreibung: Erläuterung, welche Rolle die Ressource für den Datensatz, das Dokument bzw. die App spielt (z. B. ob es sich dabei um eine bestimmte Zeitscheibe oder Schlüsselliste handelt. Der Beschreibungstext, wird mit dem Link zur Ressource unterlegt.)",
             "type": "string"
           }, 
           "language": {
@@ -125,7 +125,7 @@
     },
     "dates": {
          "required": true, 
-         "description": "Kalender-Daten: Erstellungs-, Veröffentlichungs- und Aktualisierungsdaten von Daten, Dokumenten, Apps und ihren Metadaten. Wird in der Oberfläche so angezeigt, dass Datennutzer einen Eindruck davon bekommen, wie aktuell die Daten sind.",
+         "description": "Kalender-Daten: Erstellungs-, Veröffentlichungs- und Aktualisierungsdaten von Daten, Dokumenten, Apps und ihren Metadaten. Wird in der Oberfläche so angezeigt, dass Datennutzer einen Eindruck davon bekommen, wie aktuell die Daten sind.",
          "type": "array", 
          "items": {
            "type": "object", 
@@ -175,7 +175,7 @@
     },
     "subgroups": {
           "required": false, 
-          "description": "Unterkategorien: Unterkategorien für die Datensätze und Dokumente. Im Gegensatz zu den Kategorien werden hier genau die (fachlichen) Kategorien der Datenbereitsteller genutzt, d.h. jeder neu angeschlossene Datenbereitsteller kann hier benötigte Unterkategorien hinzufügen,  beispielsweise aus INSPIRE oder EVAS. Vgl.  <a href='https://github.com/fraunhoferfokus/ogd-metadata/blob/master/kategorien/'>Liste</a>. Unterkategorien werden auch für die Navigation und für Filter genutzt.",
+          "description": "Unterkategorien: Unterkategorien für die Datensätze und Dokumente. Im Gegensatz zu den Kategorien werden hier genau die (fachlichen) Kategorien der Datenbereitsteller genutzt, d.h. jeder neu angeschlossene Datenbereitsteller kann hier benötigte Unterkategorien hinzufügen,  beispielsweise aus INSPIRE oder EVAS. Vgl.  <a href='https://github.com/fraunhoferfokus/ogd-metadata/blob/master/kategorien/'>Liste</a>. Unterkategorien werden auch für die Navigation und für Filter genutzt.",
           "type": "array", 
           "items": {
             "description": "Unterkategorien: Unterkategorien des Datensatzes, des Dokuments oder der App",
@@ -235,7 +235,7 @@
     }, 
     "geographical_granularity": {
           "required": false, 
-          "description": "Räumliche Auflösung: Die geographische Granularität des Datensatzes, eines Dokuments, einer App. Wird später zum Filtern verwendet.", 
+          "description": "Räumliche Auflösung: Die geographische Granularität des Datensatzes, eines Dokuments, einer App. Wird später zum Filtern verwendet.", 
           "enum": ["bund", "land", "kommune", "stadt"],
           "type": "string"
     }, 
@@ -247,15 +247,20 @@
     }, 
     "temporal_coverage_to": {
           "required": false, 
-          "description": "End-Datum: Der Zeitpunkt, bis zu dem der Datensatz, das Dokument oder die App einschließlich Daten enthält. Wird insb. zum Filtern verwendet.", 
+          "description": "End-Datum: Der Zeitpunkt, bis zu dem der Datensatz, das Dokument oder die App einschließlich Daten enthält. Wird insb. zum Filtern verwendet.", 
           "type": "string", 
           "format": "date-time"
     }, 
     "temporal_granularity": {
           "required": false, 
-          "description": "Zeitliche Auflösung: Die zeitliche Auflösung der enthaltenen Daten, des Dokuments oder der App. Wird später zum Filtern verwendet.", 
+          "description": "Zeitliche Auflösung: Die zeitliche Auflösung der enthaltenen Daten, des Dokuments oder der App. Wird später zum Filtern verwendet.", 
           "type": "string", 
           "enum": ["sekunde", "minute", "stunde", "tag", "woche", "monat", "quartal", "jahr", "5-jahre"]
+    },
+    "temporal_granularity_factor": {
+          "required": false, 
+          "description": "Faktor für zeitliche Auflösung: Mit diesem Faktor kann die zeitliche Auflösung auf n mal temporal_granularity festgelegt werden, z.B. 15 Minuten.", 
+          "type": "number"
     },
     "used_datasets": {
           "required": false, 

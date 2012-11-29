@@ -26,3 +26,6 @@
 2012-11-21
 - Lizenzliste korrigiert: notspecified gestrichen, other-open und other-closed eingeführt für andere freie und eingeschränkte Bestimmungen.
 
+2012-11-28
+- temporal_granularity_factor eingefuehrt.
+
