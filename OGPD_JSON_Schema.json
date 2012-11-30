@@ -101,10 +101,12 @@
              "role": {
 				"enum": ["veroeffentlichende_stelle", "ansprechpartner", "vertrieb", "autor"], 
 				"type": "string", 
+				"required": true,
 				"description": "Rolle: Rolle, die dieser Kontakt für das Metadatum innehat. Unter Veröffentlichende Stelle wird die zuständige Behörde bzw. Organisationseinheit verstanden verstanden. Diese Angabe wird auch für den Filter 'nach Bereitsteller' genutzt. Der 'ansprechpartner' soll dagegen von den Datennutzern bei Fragen und Kommentaren kontaktiert werden, daher können auch Funktionstitel und Funktions-Emailadressen angegeben werden."
              }, 
              "name": {
 			   "description": "Name: Name der Person oder Funktion",
+               "required": true,
                "type": "string" 
              }, 
              "url": {
