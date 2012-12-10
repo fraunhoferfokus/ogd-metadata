@@ -1,5 +1,5 @@
 {
-  "bevoelkerung": "Bev\u00f6lkerung", 
+  "bevoelkerung": "Bevölkerung", 
   "bildung_wissenschaft": "Bildung und Wissenschaft", 
   "geo": "Geographie, Geologie und Geobasisdaten", 
   "gesetze_justiz": "Gesetze und Justiz", 
@@ -11,6 +11,6 @@
   "transport_verkehr": "Transport und Verkehr", 
   "umwelt_klima": "Umwelt und Klima",
   "verbraucher": "Verbraucherschutz", 
-  "verwaltung": "\u00d6ffentliche Verwaltung, Haushalt und Steuern", 
+  "verwaltung": "Öffentliche Verwaltung, Haushalt und Steuern", 
   "wirtschaft_arbeit": "Wirtschaft und Arbeit"
 }
