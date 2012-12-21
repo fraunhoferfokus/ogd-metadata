@@ -279,6 +279,15 @@
           "enum": ["oeffentlich", "privat", "andere"],
           "type": "string"
     }, 
+    "images": {
+          "required": false, 
+          "description": "Bilder: Links zu Bildern, die zu den Metadaten zählen, z.B. Vorschau oder Screenshot.",
+          "type": "array", 
+          "items": {
+            "type": "string",
+            "format": "uri"
+          } 
+    },
     "ogd_version": {
           "required": false, 
           "description": "Struktur-Version: Zeigt an, in welcher Version der OGD Metadaten-Struktur das Metadatum geschrieben ist. Wird nur intern verwendet, um nach Änderungen dieser Struktur festzustellen, ob die Metadaten schon angepasst wurden.", 
