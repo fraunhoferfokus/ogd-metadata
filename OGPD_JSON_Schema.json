@@ -13,6 +13,28 @@
       "description": "Titel: Der Titel beschreibt den Datensatz, das Dokument oder die App prägnant und wird z. B. in Suchergebnissen und Listen angezeigt.",
       "type": "string"
     }, 
+    "author": {
+      "required": true, 
+      "description": "Veröffentlichende Stelle: Die Behörde, von der die Daten stammen. Bei Apps der App-Hersteller.",
+      "type": "string"
+    }, 
+    "author_email": {
+      "required": false, 
+      "description": "Veröffentlichende Stelle Email: Email-Adresse oder Kontaktformular der Veröffentlichenden Stelle.",
+      "format": "uri",
+      "type": "string"
+    }, 
+    "maintainer": {
+      "required": false, 
+      "description": "Datenverantwortliche Stelle: Dieser Ansprechpartner kann bei Fragen und Anmerkungen zu den Daten kontaktiert werden.",
+      "type": "string"
+    }, 
+    "maintainer_email": {
+      "required": false, 
+      "description": "Datenverantwortliche Stelle Email: Email-Adresse oder Kontaktformular der Datenverantwortlichen Stelle.",
+      "format": "uri",
+      "type": "string"
+    }, 
     "notes": {
       "required": true, 
       "description": "Beschreibung: Beschreibung und weitere Informationen zum Datensatz, zum Dokument oder zur App, wird auf der Detailseite dargestellt und kann mehrere Absätze umfassen.",
@@ -86,20 +108,27 @@
         }
       } 
     },
+    "license_id": {
+      "enum": ["apache", "bsd-license", "cc-by", "cc-by-sa", "cc-nc", "cc-zero", "gfdl", "gpl-3.0", "mit-license", "mozilla", "mozilla1.1", "odc-odbl", "other-closed", "other-open", "app_openSource", "app_freeware", "app_kommerziell"
+      ], 
+      "type": "string", 
+      "required": true, 
+    "description": "Lizenz-ID: Lizenz aus einer festen Liste, s.u. bzw. <a href='https://github.com/fraunhoferfokus/ogd-metadata/blob/master/lizenzen/deutschland.json'>Liste</a>"
+    }, 
     "extras": {
       "required": true, 
       "type": "object", 
       "description": "Extras: Zusaetzliche Angaben", 
       "properties": {
      "contacts": {
-         "required": true, 
-         "description": "Kontakte: Liste der Kontakte zu Metadaten, Daten, Dokument bzw. App, mindestens ein Kontakt ist anzugeben, bevorzugt der Ansprechpartner.",
+         "required": false, 
+         "description": "Kontakte: Liste der Kontakte zu Metadaten, Daten, Dokument bzw. App.",
          "type": "array", 
          "items": {
            "type": "object", 
            "properties": {
              "role": {
-				"enum": ["veroeffentlichende_stelle", "ansprechpartner", "vertrieb", "autor"], 
+				"enum": ["vertrieb", "autor"], 
 				"type": "string", 
 				"required": true,
 				"description": "Rolle: Rolle, die dieser Kontakt für das Metadatum innehat. Unter Veröffentlichende Stelle wird die zuständige Behörde bzw. Organisationseinheit verstanden verstanden. Diese Angabe wird auch für den Filter 'nach Bereitsteller' genutzt. Der 'ansprechpartner' soll dagegen von den Datennutzern bei Fragen und Kommentaren kontaktiert werden, daher können auch Funktionstitel und Funktions-Emailadressen angegeben werden."
@@ -150,13 +179,6 @@
           "description": "Nutzungsbestimmungen: Festlegung der spezifischen Nutzungsbestimmungen des Datensatzes, des Dokuments oder der App.", 
           "type": "object", 
           "properties": {
-        	"license_id": {
-        	  "enum": ["apache", "bsd-license", "cc-by", "cc-by-sa", "cc-nc", "cc-zero", "gfdl", "gpl-3.0", "mit-license", "mozilla", "mozilla1.1", "odc-odbl", "other-closed", "other-open", "app_openSource", "app_freeware", "app_kommerziell"
-        	  ], 
-        	  "type": "string", 
-              "required": false, 
-        	  "description": "Lizenz-ID: Lizenz aus einer festen Liste, s.u. bzw. <a href='https://github.com/fraunhoferfokus/ogd-metadata/blob/master/lizenzen/deutschland.json'>Liste</a>"
-        	}, 
         	"other": {
         	  "type": "string", 
               "required": false, 

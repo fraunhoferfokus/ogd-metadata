@@ -29,3 +29,8 @@
 2012-11-28
 - temporal_granularity_factor eingefuehrt.
 
+2012-12-21
+- Konsolidierung mit Österreich mit Hinblick auf das OD-Portal der Europäischen Kommission
+- license_id wieder zu den Kernfeldern verschoben.
+- Veröffentlichende Stelle und Ansprechpartner wieder in die Kernfelder verschoben.
+
