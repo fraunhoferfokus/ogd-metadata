@@ -1,0 +1,1 @@
+In diesem Ordner finden sich vorläufig Inhalte, die vom Bundesministerium des Innern in Abstimmung mit der Bund-Länder-Arbeitsgruppe Open Government im Rahmen des Projektes Open Government entwickelt wurden.
