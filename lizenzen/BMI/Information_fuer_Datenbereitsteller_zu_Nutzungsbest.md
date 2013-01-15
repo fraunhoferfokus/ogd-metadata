@@ -27,11 +27,11 @@ Für das Open-Government-Portal Deutschland wird die Information über die Nutzu
 
 Die Unterarbeitsgruppe Recht der Bund-Länder-Arbeitsgruppe Open Government hat einfache Nutzungsbestimmungen entwickelt und empfiehlt deren Anwendung für Datensätze, die frei zur Verfügung gestellt werden sollen. Denn: Daten sind umso wertvoller je einheitlicher die rechtlichen Bedingungen sind, unter denen sie bereit gestellt werden. Daten unter den gleichen Nutzungsbestimmungen sind einfacher kombinierbar.
 
-Die Unterarbeitsgruppe empfiehlt als Standardnutzungsbestimmung die „Datenlizenz Deutschland – Namensnennung“. Für die Fälle, in denen die kommerzielle Nutzung ausgeschlossen sein soll, empfiehlt sie die „Datenlizenz Deutschland - Namensnennung - nicht kommerziell“. Für die übrigen Fälle soll auf andere Nutzungsbestimmungen, z.B. die Geolizenz, zurückgegriffen werden.
+Die Unterarbeitsgruppe empfiehlt als Standardnutzungsbestimmung die „Datenlizenz Deutschland – Namensnennung“. Für die Fälle, in denen die kommerzielle Nutzung ausgeschlossen sein soll, wird die „Datenlizenz Deutschland - Namensnennung - nicht kommerziell“ bereitgestellt, deren Beschränkung auf nichtkommerzielle Nutzung unvereinbar mit den Mindestanforderungen für Open Data ist. Für die übrigen Fälle soll auf andere Nutzungsbestimmungen, z.B. die Geolizenz, zurückgegriffen werden.
 
 ###Welche Vorteile haben die empfohlenen Nutzungsbestimmungen?
 
-Die empfohlenen Nutzungsbestimmungen sind speziell für die Datenbereitstellung auf dem Open-Government-Portal Deutschland entwickelt worden und somit auf die Bedürfnisse öffentlicher Datenbereitsteller zugeschnitten. Datenbereitsteller, die auf diese Empfehlung zurückgreifen, müssen weder eigene Nutzungsbestimmungen entwickeln noch aus dem großen Angebot von gebräuchlichen Lizenzen auswählen.
+Die empfohlenen Standardnutzungsbestimmungen sind speziell für die Datenbereitstellung auf dem Open-Government-Portal Deutschland entwickelt worden und somit auf die Bedürfnisse öffentlicher Datenbereitsteller zugeschnitten. Datenbereitsteller, die auf diese Empfehlung zurückgreifen, müssen weder eigene Nutzungsbestimmungen entwickeln noch aus dem großen Angebot von gebräuchlichen Lizenzen auswählen.
 
 Je mehr Datensätze unter einheitlichen Nutzungsbestimmungen stehen, desto einfacher wird die Nutzung, insbesondere die Kombination von Datensätzen. Der breite Einsatz der „Datenlizenzen Deutschland“ fördert somit die Nutzung der Daten.
 
@@ -45,9 +45,9 @@ Die einzige Bedingung für die Nutzung ist, dass der Name der bereitstellenden B
  
 ###Welche Nutzung erlaubt die Nutzungsbestimmung „Datenlizenz Deutschland – Namensnennung – nicht kommerziell“?
 
-Daten und Dokumente, die unter der „Deutschen Datenlizenz – Namensnennung – nicht kommerziell“ stehen, dürfen auf jede Art genutzt werden, soweit keine kommerziellen Zwecke verfolgt werden.
+Daten und Dokumente, die unter der „Deutschen Datenlizenz – Namensnennung – nicht kommerziell“ stehen, dürfen nicht für kommerzielle Zwecke Art genutzt werden.
 
-Kommerziell ist eine Verwendung, die primär auf das Erzielen von Erlösen und wirtschaftlichen Vorteilen ausgerichtet ist. Folglich können Bürger die Daten beispielsweise im Rahmen ihres gesellschaftspolitischen Engagements verwenden. Die Verwendung zu wissenschaftlichen oder journalistischen Zwecken ist ebenfalls zulässig.
+Kommerziell ist eine Verwendung, bei der die Nutzung der Daten durch eine gewerbliche Entität erfolgt oder auf eine Weise, die zumindest eine gewerbliche Komponente umfasst. Folglich können Bürger die Daten beispielsweise im Rahmen ihres gesellschaftspolitischen Engagements verwenden, wenn dieses vollständig auf wirtschaftliches Handeln verzichtet. Die Verwendung zu wissenschaftlichen oder journalistischen Zwecken ist nur dann zulässig, wenn für das die Daten enthaltene Werk auf Bezahlung, Refinanzierung durch Werbung oder andere gewerbliche Refinanzierung verzichtet wird. 
 
 ###Was bedeutet die Verwendung der empfohlenen Nutzungsbestimmungen für die Frage, ob Daten geldleistungspflichtig sind?
 
