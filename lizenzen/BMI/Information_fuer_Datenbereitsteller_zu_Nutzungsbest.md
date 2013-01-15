@@ -45,7 +45,7 @@ Die einzige Bedingung für die Nutzung ist, dass der Name der bereitstellenden B
  
 ###Welche Nutzung erlaubt die Nutzungsbestimmung „Datenlizenz Deutschland – Namensnennung – nicht kommerziell“?
 
-Daten und Dokumente, die unter der „Deutschen Datenlizenz – Namensnennung – nicht kommerziell“ stehen, dürfen nicht für kommerzielle Zwecke Art genutzt werden.
+Daten und Dokumente, die unter der „Deutschen Datenlizenz – Namensnennung – nicht kommerziell“ stehen, dürfen nicht kommerziell genutzt werden.
 
 Kommerziell ist eine Verwendung, bei der die Nutzung der Daten durch eine gewerbliche Entität erfolgt oder auf eine Weise, die zumindest eine gewerbliche Komponente umfasst. Folglich können Bürger die Daten beispielsweise im Rahmen ihres gesellschaftspolitischen Engagements verwenden, wenn dieses vollständig auf wirtschaftliches Handeln verzichtet. Die Verwendung zu wissenschaftlichen oder journalistischen Zwecken ist nur dann zulässig, wenn für das die Daten enthaltene Werk auf Bezahlung, Refinanzierung durch Werbung oder andere gewerbliche Refinanzierung verzichtet wird. 
 
