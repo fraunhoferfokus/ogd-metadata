@@ -9,6 +9,10 @@ Nutzungsbestimmungen oder Lizenzen legen die Bedingungen fest, unter denen ein D
 
 Fehlende oder unklare Nutzungsbestimmungen erschweren die Nutzung von Datensätzen und Dokumenten: Für den Nutzer ist nicht klar ersichtlich, ob und inwieweit die Nutzung zulässig ist. Der Nutzer muss Kontakt mit der bereitstellenden Behörde aufnehmen und die Bedingungen der Weiterverwendung klären. Das bedeutet sowohl für den Datenbereitsteller als auch für den Nutzer einen Aufwand, der durch eine möglichst einfache und verständliche Lizenzierung bereits bei der Bereitstellung vermieden werden kann.
 
+###Welche Lizenz wird empfohlen?
+
+Das BMI empfiehlt die „Datenlizenz Deutschland – Namensnennung“. Weitere Einschränkungen, beispielsweise der Ausschluss kommerzieller Nutzung, erschweren die Nachnutzung erheblich, und sollten wenn überhaupt nur als vorläufige Lösung verwendet werden, bis eine vollständige Öffnung möglich ist.
+
 ###Welche Bedeutung haben Nutzungsbestimmungen für das Open-Government-Portal Deutschland?
 
 Voraussetzung für die Aufnahme in den Metadatenkatalog des Open-Government-Portals Deutschland sind eindeutige Nutzungsbestimmungen. Diese fördern die Verwendung der Daten und Dokumente. Daher muss für alle Datensätze und Dokumente eindeutig festgelegt sein, unter welchen Bedingungen sie verwendet werden dürfen.
