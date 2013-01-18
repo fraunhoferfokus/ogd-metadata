@@ -31,3 +31,6 @@
 
 2012-12-21
 - images eingeführt v.a. im Hinblick auf App-Bilder
+
+2013-01-18
+- Lizenzen hinzugefügt: Geolizenzen, PDDL, Daten-Lizenz DE, Amtliches Werk

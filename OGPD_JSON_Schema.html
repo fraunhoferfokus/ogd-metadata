@@ -6,7 +6,7 @@
 td {vertical-align:top;}
 -->
 </style>
-</head><body>
+</head><body>Open Government Data - Metadatenstruktur, Stand: 18.01.2013
 <table border=1 cellpadding=0 cellspacing=0  style="empty-cells:show;vertical-align:top">
  <col > <col  span=3><col ><col ><col ><col >
  <tr>
@@ -48,7 +48,7 @@ td {vertical-align:top;}
 <tr><td rowspan="1">Rolle</td><td rowspan="1">role</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">Enum aus: erstellt, veroeffentlicht, aktualisiert</td><td rowspan="1">Rolle, die dieses Datum für den Datensatz spielt</td></tr>
 <tr><td rowspan="1">Datum</td><td rowspan="1">date</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">date-time</td><td rowspan="1">Das Kalender-Datum</td></tr>
 <tr><td rowspan="1">Nutzungsbestimmungen</td><td rowspan="5">terms_of_use</td><td rowspan="1"></td><td rowspan="1">X</td><td rowspan="1">Object</td><td rowspan="1"></td><td rowspan="1">Festlegung der spezifischen Nutzungsbestimmungen des Datensatzes, des Dokuments oder der App.</td></tr>
-<tr><td rowspan="1">Lizenz-ID</td><td rowspan="1">license_id</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">Enum aus: apache, bsd-license, cc-by, cc-by-sa, cc-nc, cc-zero, gfdl, gpl-3.0, mit-license, mozilla, mozilla1.1, odc-odbl, other-closed, other-open, app_openSource, app_freeware, app_kommerziell</td><td rowspan="1">Lizenz aus einer festen Liste, s.u. bzw. <a href='https://github.com/fraunhoferfokus/ogd-metadata/blob/master/lizenzen/deutschland.json'>Liste</a></td></tr>
+<tr><td rowspan="1">Lizenz-ID</td><td rowspan="1">license_id</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">Enum aus: apache, app_commercial, app_freeware, app_opensource, bsd-license, cc-by, cc-by-sa, cc-nc, cc-zero, dl-de-by-1.0, dl-de-by-nc-1.0, geolizenz-closed, geolizenz-i-a, gfdl, gpl-3.0, mozilla, odc-odbl, odc-pddl, official-work, other-closed, other-open</td><td rowspan="1">Lizenz aus einer festen Liste, s.u. bzw. <a href='https://github.com/fraunhoferfokus/ogd-metadata/blob/master/lizenzen/deutschland.json'>Liste</a></td></tr>
 <tr><td rowspan="1">Freitext</td><td rowspan="1">other</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1"></td><td rowspan="1">Freitext, der die Nutzungsbestimmungen festlegt, falls diese keiner allgemein bekannten Lizenz entsprechen.</td></tr>
 <tr><td rowspan="1">URL</td><td rowspan="1">license_url</td><td rowspan="1"></td><td rowspan="1">String</td><td rowspan="1">URI</td><td rowspan="1">URL, auf der die Lizenz des Datensatzes, Dokuments oder der App beschrieben und erklärt ist.</td></tr>
 <tr><td rowspan="1">Nutzungsfreiheit</td><td rowspan="1">is_free_to_use</td><td rowspan="1"></td><td rowspan="1">Boolean</td><td rowspan="1"></td><td rowspan="1">Die Information, ob der Datensatz/das Dokument/die App kostenfrei und zweckoffen ist (muss gesetzt werden, wenn Freitext bei der Lizenzangabe genutzt wird).</td></tr>
@@ -116,4 +116,10 @@ td {vertical-align:top;}
 <tr><td>odc-odbl</td><td>Open Data Commons Open Database License (ODbL)</td><td>offen</td><td>X</td><td></td></tr>
 <tr><td>other-open</td><td>Andere freie Lizenz</td><td>offen</td><td>X</td><td>X</td></tr>
 <tr><td>other-closed</td><td>Andere eingeschränkte Lizenz</td><td>eingeschränkt</td><td>X</td><td>X</td></tr>
+<tr><td>geolizenz-i-a</td><td>Geolizenz Ia Namensnennung</td><td>offen</td><td>X</td><td></td></tr>
+<tr><td>geolizenz-closed</td><td>eingeschränkte Geolizenz</td><td>offen</td><td>X</td><td></td></tr>
+<tr><td>official-work</td><td>Amtliches Werk, lizenzfrei nach §5 UrhG</td><td>offen</td><td>X</td><td></td></tr>
+<tr><td>dl-de-by-1.0</td><td>Datenlizenz Deutschland Namensnennung</td><td>offen</td><td>X</td><td></td></tr>
+<tr><td>dl-de-by-nc-1.0</td><td>Datenlizenz Deutschland Namensnennung nicht-kommerziell</td><td>offen</td><td>X</td><td></td></tr>
+<tr><td>odc-pddl</td><td>Open Data Commons Public Domain Dedication and Licence (PDDL)</td><td>offen</td><td>X</td><td></td></tr>
 </table>

@@ -224,5 +224,45 @@
     "status": "active", 
     "title": "eingeschränkte Geolizenz", 
     "url": "http://www.geolizenz.org/index/lizenzen.php"
+  }, 
+  {
+    "domain_content": true, 
+    "domain_data": true, 
+    "domain_software": false, 
+    "family": "", 
+    "id": "official-work", 
+    "is_generic": true, 
+    "is_okd_compliant": true, 
+    "is_osi_compliant": false, 
+    "maintainer": "", 
+    "status": "active", 
+    "title": "Amtliches Werk, lizenzfrei nach §5 UrhG", 
+    "url": "http://www.gesetze-im-internet.de/urhg/__5.html"
+  }, 
+  {
+    "domain_content": true, 
+    "domain_data": true, 
+    "domain_software": false, 
+    "family": "", 
+    "id": "dl-de-by-1.0", 
+    "is_generic": true, 
+    "is_okd_compliant": true, 
+    "is_osi_compliant": false, 
+    "maintainer": "", 
+    "status": "active", 
+    "title": "Datenlizenz Deutschland Namensnennung", 
+    "url": "http://www.daten-deutschland.de/bibliothek/Datenlizenz_Deutschland/dl-de-by-1.0"
+  },{
+    "domain_content": true, 
+    "domain_data": true, 
+    "domain_software": false, 
+    "family": "", 
+    "id": "odc-pddl", 
+    "is_okd_compliant": true, 
+    "is_osi_compliant": false, 
+    "maintainer": "", 
+    "status": "active", 
+    "title": "Open Data Commons Public Domain Dedication and Licence (PDDL)", 
+    "url": "http://www.opendefinition.org/licenses/odc-pddl"
   }
 ]
