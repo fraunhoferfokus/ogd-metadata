@@ -34,3 +34,6 @@
 
 2013-01-18
 - Lizenzen hinzugefügt: Geolizenzen, PDDL, Daten-Lizenz DE, Amtliches Werk
+
+2013-01-22
+- Lizenzen hinzugefügt: ODC-BY
