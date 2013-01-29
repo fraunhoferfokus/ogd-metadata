@@ -151,7 +151,7 @@
           "type": "object", 
           "properties": {
         	"license_id": {
-        	  "enum": ["apache", "app_commercial", "app_freeware", "app_opensource", "bsd-license", "cc-by", "cc-by-sa", "cc-nc", "cc-zero", "dl-de-by-1.0", "geolizenz-closed", "geolizenz-i-a", "gfdl", "gpl-3.0", "mozilla", "odc-by", "odc-odbl", "odc-pddl", "official-work", "other-closed", "other-open"], 
+        	  "enum": ["apache", "app_commercial", "app_freeware", "app_opensource", "bsd-license", "cc-by", "cc-by-sa", "cc-nc", "cc-zero", "dl-de-by-1.0", "dl-de-by-nc-1.0", "geolizenz-closed", "geolizenz-i-a", "gfdl", "gpl-3.0", "mozilla", "odc-by", "odc-odbl", "odc-pddl", "official-work", "other-closed", "other-open"], 
         	  "type": "string", 
               "required": false, 
         	  "description": "Lizenz-ID: Lizenz aus einer festen Liste, s.u. bzw. <a href='https://github.com/fraunhoferfokus/ogd-metadata/blob/master/lizenzen/deutschland.json'>Liste</a>"

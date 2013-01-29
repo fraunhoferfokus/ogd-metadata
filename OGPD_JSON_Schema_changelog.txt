@@ -37,3 +37,6 @@
 
 2013-01-22
 - Lizenzen hinzugefügt: ODC-BY
+
+2013-01-22
+- Lizenz hinzugefügt: Datenlizenz DE NC
