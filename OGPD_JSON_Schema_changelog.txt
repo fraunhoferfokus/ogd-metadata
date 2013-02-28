@@ -49,3 +49,6 @@
   - license_id wieder zu den Kernfeldern verschoben.
   - Veröffentlichende Stelle und Ansprechpartner wieder in die Kernfelder verschoben.
 
+2012-02-28
+- CC-BY-ND aufgenommen
+

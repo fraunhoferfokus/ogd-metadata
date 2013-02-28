@@ -132,6 +132,19 @@
       "title": "Creative Commons Nicht-Kommerziell (CC-NC)", 
       "url": "http://creativecommons.org/licenses/by-nc/2.0/"
     }, 
+    {
+      "domain_content": true, 
+      "domain_data": true, 
+      "domain_software": false, 
+      "family": "", 
+      "id": "cc-by-nd", 
+      "is_okd_compliant": false, 
+      "is_osi_compliant": false, 
+      "maintainer": "", 
+      "status": "active", 
+      "title": "Creative Commons Keine Bearbeitung (CC-BY-ND)", 
+      "url": "http://creativecommons.org/licenses/by-nd/3.0/"
+    }, 
 	{
 	    "domain_content": true, 
 	    "domain_data": true, 
