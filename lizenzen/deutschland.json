@@ -28,6 +28,20 @@
       "url": "http://www.gesetze-im-internet.de/urhg/__5.html"
     },
     {
+      "domain_content": false, 
+      "domain_data": true, 
+      "domain_software": false, 
+      "family": "", 
+      "id": "geonutzv-de-2013-03-19", 
+      "is_generic": true, 
+      "is_okd_compliant": true, 
+      "is_osi_compliant": false, 
+      "maintainer": "", 
+      "status": "active", 
+      "title": "Nutzungsbestimmungen für die Bereitstellung von Geodaten des Bundes", 
+      "url": "http://www.geodatenzentrum.de/docpdf/geonutzv.pdf"
+    },
+    {
       "domain_content": true, 
       "domain_data": true, 
       "domain_software": false, 

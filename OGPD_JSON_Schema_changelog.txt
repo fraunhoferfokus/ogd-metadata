@@ -44,11 +44,13 @@
 2013-02-08
 - Geolizenz Ia konservativ erst einmal als nicht-offen eingestuft.
 
-2012-02-08
+2013-02-08
 - Konsolidierung mit Österreich mit Hinblick auf das OD-Portal der Europäischen Kommission
   - license_id wieder zu den Kernfeldern verschoben.
   - Veröffentlichende Stelle und Ansprechpartner wieder in die Kernfelder verschoben.
 
-2012-02-28
+2013-02-28
 - CC-BY-ND aufgenommen
 
+2013-03-27
+- Geodaten-Nutzungsverordnung hinzugefügt.
