@@ -1,0 +1,14 @@
+{
+    "Bildung": ["bildung_wissenschaft"],
+    "Familie": ["soziales"],
+    "Gesundheit": ["gesundheit"],
+    "Nachrichten": ["politik_wahlen"],
+    "Nachschlagewerke": ["bildung_wissenschaft"],
+    "Navigation": ["transport_verkehr"],
+    "Politik": ["politik_wahlen"],
+    "Organisation": ["politik_wahlen"],
+    "Reisen": ["kultur_freizeit_sport_tourismus"],
+    "Soziale Netze": ["soziales"],
+    "Sport": ["kultur_freizeit_sport_tourismus"],
+    "Wetter": ["umwelt_klima"]
+}
