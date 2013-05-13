@@ -174,7 +174,7 @@
          }
     },
     "terms_of_use": {
-          "required": true, 
+          "required": false, 
           "description": "Nutzungsbestimmungen: Festlegung der spezifischen Nutzungsbestimmungen des Datensatzes, des Dokuments oder der App.", 
           "type": "object", 
           "properties": {
