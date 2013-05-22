@@ -129,13 +129,13 @@ def listLicenseTable(list):
  style='border-collapse:collapse;table-layout:fixed'>
  <col>
 <tr><th colspan='4'>Lizenzen</th></tr> 
-<tr><th>ID</th><th>Titel</th><th>Klassifizierung</th><th>Für Daten/Inhalte</th><th>Für Apps</th></tr>
+<tr><th>ID</th><th>Titel</th><th>URL</th><th>Klassifizierung</th><th>Für Daten/Inhalte</th><th>Für Apps</th></tr>
 """]
 	for license in list:
 		is_open         = 'offen' if license['is_osi_compliant'] or license['is_okd_compliant'] else 'eingeschränkt'
 		domain_data     = 'X' if license['domain_content'] or license['domain_data'] else ''
 		domain_software = 'X' if license['domain_software'] else ''
-		out.append('<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td></tr>\n'.format(license['id'],license['title'],is_open,domain_data,domain_software))
+		out.append('<tr><td>{0}</td><td>{1}</td><td><a href="{2}">{2}</a></td><td>{3}</td><td>{4}</td><td>{5}</td></tr>\n'.format(license['id'],license['title'],license['url'],is_open,domain_data,domain_software))
 	out.append('</table>')
 	return ''.join(out)
 

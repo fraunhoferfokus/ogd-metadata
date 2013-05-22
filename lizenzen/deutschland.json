@@ -212,7 +212,7 @@
     "maintainer": "",
     "status": "active",
     "title": "Apache Lizenz",
-    "url": ""
+    "url": "http://www.apache.org/licenses"
     }, 
     {
     "domain_content": false, 
@@ -304,7 +304,7 @@
     "status": "active", 
     "tags": [], 
     "title": "Mozilla Public License 1.0 (MPL)", 
-    "url": ""
+    "url": "http://www.mozilla.org/MPL"
   },
   {
     "domain_content": true, 
