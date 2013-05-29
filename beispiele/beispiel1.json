@@ -3,8 +3,8 @@
     "title": "Statistische Angaben des Bundesamt für Beispieldaten",
     "author": "Bundesamt für Beispieldaten",
     "author_email": "bundesamt.beispieldaten@example.com",
-    "maintainer": "Statistisches Bundesamt",
-    "maintainer_email": "maintainer@example.com",
+    "maintainer": "Christine Rothstein",
+    "maintainer_email": "christine.rothstein@example.com",
     "notes": "Dieser Datensatz dient zur Veranschaulichung.",
     "groups": [
         "infrastruktur_bauen_wohnen",
@@ -38,13 +38,6 @@
     "extras": {
         "contacts": [
             {
-                "role": "autor",
-                "name": "Bundesamt für Beispieldaten",
-                "url": "http://www.example.com/bundesamt/beispieldaten",
-                "email": "bundesamt.beispieldaten@example.com",
-                "address": "Ellmenreichstrasse 39, 91326 Gößweinstein"
-            },
-            {
                 "role": "vertrieb",
                 "name": "Vertrieb Beispieldaten des Bundes",
                 "url": "http://www.example.com/bundesamt/beispieldaten/vertrieb",
@@ -68,8 +61,7 @@
         ],
         "terms_of_use": {
             "other": "Datenlizenz Deutschland Namensnennung",
-            "license_url": "http://www.daten-deutschland.de/bibliothek/Datenlizenz_Deutschland/dl-de-by-1.0",
-            "is_free_to_use": true
+            "license_url": "http://www.daten-deutschland.de/bibliothek/Datenlizenz_Deutschland/dl-de-by-1.0"
         },
         "subgroups": [
             "society",
@@ -108,17 +100,8 @@
         "geographically_granularity": "land",
         "temporal_coverage_from" : "2013-02-25T20:56:16",
         "temporal_coverage_to" : "2013-05-25T00:00:00",
-        "temporal_coverage_graunularity" : "tag",
-        "used_datasets": [
-          "http://www.example.com/open-data/datasets/0001",
-        "http://www.example.com/open-data/datasets/2351",
-        "http://www.example.com/open-data/datasets/8931"],
+        "temporal_coverage_granularity" : "tag",
         "sector": "oeffentlich",
-        "images": [
-          "http://www.example.com/open-data/images/DSC-9522.jpg",
-        "http://www.example.com/open-data/images/DSC-0013.jpg",
-        "http://www.example.com/open-data/images/DSC-1190.jpg"
-          ],
         "ogd_version": "v1.0"
     }
 }
