@@ -1,0 +1,107 @@
+{
+    "name": "beispiel-datensatz-001",
+    "title": "Statistische Angaben des Bundesamt für Beispieldaten",
+    "author": "Bundesamt für Beispieldaten",
+    "author_email": "bundesamt.beispieldaten@example.com",
+    "maintainer": "Christine Rothstein",
+    "maintainer_email": "christine.rothstein@example.com",
+    "notes": "Dieser Datensatz dient zur Veranschaulichung.",
+    "groups": [
+        "infrastruktur_bauen_wohnen",
+        "bevoelkerung",
+        "verwaltung"
+    ],
+    "tags": [
+        "statistiken",
+        "beispiele",
+        "bundesamt"
+    ],
+    "url": "http://www.example.com/bundesamt/beispieldaten/beispiel-datensatz-001",
+    "type": "datensatz",
+    "resources": [
+        {
+            "url": "http://www.example.com/bundesamt/beispieldaten/tabelleDownload/43521-0001.csv",
+            "format": "CSV",
+            "description": "Tabellarische Übersicht als CSV",
+            "language": "de",
+            "hash": "d14a028c2a3a2bc9476102bb288234c415a2b01f828ea62ac5b3e42f"
+        },
+        {
+            "url": "http://www.example.com/bundesamt/beispieldaten/tabelleDownload/43521-0002.csv",
+            "format": "XLS",
+            "description": "Tabellarische Übersicht als XLS",
+            "language": "de",
+            "hash": "d14a028c2a3a2bc9476102bb288234c415b2b01f828ea62ac5b3e42f"
+        }
+    ],
+    "license_id": "dl-de-by-1.0",
+    "extras": {
+        "contacts": [
+            {
+                "role": "vertrieb",
+                "name": "Vertrieb Beispieldaten des Bundes",
+                "url": "http://www.example.com/bundesamt/beispieldaten/vertrieb",
+                "email": "vertrieb.beispieldaten@example.com",
+                "address": "Büsingstrasse 48, 85661 Forstinning"
+            }
+        ],
+        "dates": [
+            {
+                "date": "2013-02-25T20:56:16",
+                "role": "veroeffentlicht"
+            },
+            {
+                "date": "2013-02-25T00:00:00",
+                "role": "veroeffentlicht"
+            },
+            {
+                "date": "2013-02-25T00:00:00",
+                "role": "erstellt"
+            }
+        ],
+        "terms_of_use": {
+            "other": "Datenlizenz Deutschland Namensnennung",
+            "license_url": "http://www.daten-deutschland.de/bibliothek/Datenlizenz_Deutschland/dl-de-by-1.0"
+        },
+        "subgroups": [
+            "society",
+            "structure"
+        ],
+        "metadata_original_portal": "http://www.example.com/bundesamt/beispieldaten",
+        "metadata_original_id": "01043a74-ca8c-783b-5541",
+        "metadata_original_xml": "http://www.example.com/bundesamt/beispieldaten/csw?record=01043a74-ca8c-783b-5541",
+        "metadata_original_html": "http://www.example.com/bundesamt/beispieldaten/01043a74-ca8c-783b-5541",
+        "spatial": {
+            "type": "polygon",
+            "coordinates": [
+              [
+                  15.02,
+                  47.16
+              ],
+              [
+                  15.02,
+                  55.03
+              ],
+              [
+                  5.52,
+                  55.03
+              ],
+              [
+                  5.52,
+                  47.16
+              ],
+              [
+                  15.02,
+                  47.16
+              ]
+            ]
+        },
+        "spatial-text": "12 0 64 5410 34",
+        "geographically_granularity": "land",
+        "temporal_coverage_from" : "2013-02-25T20:56:16",
+        "temporal_coverage_to" : "2013-05-25T00:00:00",
+        "temporal_coverage_granularity" : "tag",
+        "sector": "oeffentlich",
+        "ogd_version": "v1.0"
+    }
+}
