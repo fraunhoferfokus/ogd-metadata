@@ -260,7 +260,7 @@
       "required": false,
       "description": "Abdeckung als Codierung: Abgedecktes Gebiet durch NUTS-Code und optionalem Amtlichen Gemeindeschlüssel getrennt durch einen Schrägstrich.",
       "type": "string",
-      "pattern": "^[A-Z]{2}[0-9A-Z]{,3}(/[0-9]{8})?$"
+      "pattern": "^[A-Z]{2}[0-9A-Z]{0,3}(/.*)?$"
     },
     "spatial-uri": {
       "required": false,
