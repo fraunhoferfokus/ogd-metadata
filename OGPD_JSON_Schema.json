@@ -259,7 +259,8 @@
     "spatial-code": {
       "required": false,
       "description": "Abdeckung als Codierung: Abgedecktes Gebiet durch NUTS-Code und optionalem Amtlichen Gemeindeschlüssel.",
-      "type": "string"
+      "type": "string",
+      "pattern": "^[A-Z]{2}[0-9A-Z]{,3}(/[0-9]{8})?$"
     },
     "spatial-uri": {
       "required": false,
