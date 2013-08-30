@@ -5,7 +5,7 @@
     "author_email": "bundesamt.beispieldaten@example.com",
     "maintainer": "Christine Rothstein",
     "maintainer_email": "christine.rothstein@example.com",
-    "notes": "Dieser Datensatz dient zur Veranschaulichung.",
+    "notes": "Dieser Datensatz dient zur Veranschaulichung. An genau dieser Stelle steht die ausführlichere Beschreibung.",
     "groups": [
         "infrastruktur_bauen_wohnen",
         "bevoelkerung",
@@ -47,22 +47,18 @@
         ],
         "dates": [
             {
+                "date": "2013-02-25T00:00:00",
+                "role": "erstellt"
+            },
+            {
                 "date": "2013-02-25T20:56:16",
                 "role": "veroeffentlicht"
             },
             {
-                "date": "2013-02-25T00:00:00",
-                "role": "veroeffentlicht"
-            },
-            {
-                "date": "2013-02-25T00:00:00",
-                "role": "erstellt"
+                "date": "2014-02-25T00:00:00",
+                "role": "aktualisiert"
             }
         ],
-        "terms_of_use": {
-            "other": "Datenlizenz Deutschland Namensnennung",
-            "license_url": "http://www.daten-deutschland.de/bibliothek/Datenlizenz_Deutschland/dl-de-by-1.0"
-        },
         "subgroups": [
             "society",
             "structure"
@@ -96,7 +92,7 @@
               ]
             ]
         },
-        "spatial-text": "12 0 64 5410 34",
+        "spatial-text": "Märkisch-Oderland 12 0 64",
         "geographically_granularity": "land",
         "temporal_coverage_from" : "2013-02-25T20:56:16",
         "temporal_coverage_to" : "2013-05-25T00:00:00",
