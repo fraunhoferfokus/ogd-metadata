@@ -256,6 +256,17 @@
           "description": "Abdeckung als Text: Abgedecktes Gebiets, wenn möglich der Amtliche Gemeindeschlüssel. Wird später für eine geographische Suche verwendet.", 
           "type": "string"
     }, 
+    "spatial-code": {
+      "required": false,
+      "description": "Abdeckung als Codierung: Abgedecktes Gebiet durch NUTS-Code und optionalem Amtlichen Gemeindeschlüssel.",
+      "type": "string"
+    },
+    "spatial-uri": {
+      "required": false,
+      "description": "Linked Data Ressource die per URI identifiziert ist und der geographischen Abdeckung entspricht.",
+      "type": "string",
+      "format": "uri"
+    },
     "geographical_granularity": {
           "required": false, 
           "description": "Räumliche Auflösung: Die geographische Granularität des Datensatzes, eines Dokuments, einer App. Wird später zum Filtern verwendet.", 
