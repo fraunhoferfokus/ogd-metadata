@@ -180,7 +180,7 @@
 	    "family": "", 
 	    "id": "geolizenz-v1.2.1-open", 
 	    "is_generic": true, 
-	    "is_okd_compliant": false, 
+	    "is_okd_compliant": true, 
 	    "is_osi_compliant": false, 
 	    "maintainer": "", 
 	    "status": "active", 
