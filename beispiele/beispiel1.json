@@ -69,7 +69,7 @@
         "metadata_original_html": "http://www.example.com/bundesamt/beispieldaten/01043a74-ca8c-783b-5541",
         "spatial": {
             "type": "polygon",
-            "coordinates": [
+            "coordinates": [[
               [
                   15.02,
                   47.16
@@ -89,7 +89,7 @@
               [
                   15.02,
                   47.16
-              ]
+              ]]
             ]
         },
         "spatial-text": "Märkisch-Oderland 12 0 64",

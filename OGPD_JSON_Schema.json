@@ -241,12 +241,17 @@
             }, 
             "coordinates": {
               "type": "array",
-              "description": "Koordinaten Liste der Koordinaten",
+              "description": "Liste der LinearRing Koordinaten-Liste",
               "items": {
                 "type": "array", 
-                "description": "Koordinaten in der Reihenfolge x, y",
+                "description": "Koordinatenliste die einen LinearRing bildet",
                 "items": {
-                  "type": "number"
+                  "type": "array",
+                  "description": "Koordinatenliste bestehend aus x,y Koordinaten",
+                  "items": {
+                    "type": "number",
+                    "description": "x bzw. y Koordinate"
+                  }
                 }
               }
             }
