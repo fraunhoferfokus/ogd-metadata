@@ -1,4 +1,4 @@
 language: node_js
 node_js:
   - "0.10"
-script: cd validation/ && nodejs validate.js ../beispiele/beispiel1.json
+script: cd validation/ && node validate.js ../beispiele/beispiel1.json
