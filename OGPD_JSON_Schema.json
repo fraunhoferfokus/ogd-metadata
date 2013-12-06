@@ -5,7 +5,7 @@
   "properties": {
     "name": {
       "required": true, 
-      "description": "Name: Ein für Menschen lesbarer Bezeichner des Datensatzes, des Dokuments oder der Apps, der für eine Identifizierung genutzt werden kann (einfache ASCII-Präsentation des Titels, auch für die Pretty-Link-URL, Linked Data URIs)",
+      "description": "Name: Ein für Menschen lesbarer Bezeichner des Datensatzes, des Dokuments oder der Apps, der für eine Identifizierung genutzt werden kann (einfache ASCII-Präsentation des Titels, auch für die Pretty-Link-URL, Linked Data URIs). Um Dopplungen zu vermeiden, wird empfohlen, dem eigentlichen Namen Land, Bundesland und ggf. feinerer Gebietskörperschaft im ISO 3166-1 und -2 Code voranzustellen, z.B. de-mv-rostock-polizeidienststellen.",
       "pattern": "^[a-z0-9_-]{2,}$", 
       "type": "string"
     }, 
