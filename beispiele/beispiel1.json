@@ -69,7 +69,7 @@
         "metadata_original_html": "http://www.example.com/bundesamt/beispieldaten/01043a74-ca8c-783b-5541",
         "spatial": {
             "type": "polygon",
-            "coordinates": [
+            "coordinates": [[
               [
                   15.02,
                   47.16
@@ -90,7 +90,7 @@
                   15.02,
                   47.16
               ]
-            ],
+            ]],
           "ags": "12064",
           "nuts": "DE413",
           "uri": "http://dbpedia.org/resource/Landkreis_M%C3%A4rkisch-Oderland"
