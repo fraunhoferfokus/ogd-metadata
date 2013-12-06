@@ -2,6 +2,7 @@
   - Feld Namensnennung zu extras.terms_of_use hinzugefügt
   - neue Geolizenzen aufgenommen
   - Lizenzversionierung für neue und bestehende (Creative Commons) Lizenzen mit in den Identifier aufnehmen
+  - OGD Metadata Schema Version 1.1
 
 2013-12-04 GeoJSON Koordinatenformat angepasst
   - das aktuelle GeoJSON Format für Polygon ist ein zweifach geschachteltes Array und nicht einfach
