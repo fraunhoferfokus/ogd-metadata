@@ -1,4 +1,9 @@
-2013-12-06 GeoJSON Koordinatenformat angepasst
+2013-12-06 Änderungen aus der Datenbereitsteller-Telko und weiteres
+  - Feld Namensnennung zu extras.terms_of_use hinzugefügt
+  - neue Geolizenzen aufgenommen
+  - Lizenzversionierung für neue und bestehende (Creative Commons) Lizenzen mit in den Identifier aufnehmen
+
+2013-12-04 GeoJSON Koordinatenformat angepasst
   - das aktuelle GeoJSON Format für Polygon ist ein zweifach geschachteltes Array und nicht einfach
   - siehe: http://www.geojson.org/geojson-spec.html#id4
   - dementsprechend wurde extras.spatial.coordinates angepasst
