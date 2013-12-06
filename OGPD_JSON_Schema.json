@@ -190,6 +190,11 @@
         	  "description": "URL: URL, auf der die Lizenz des Datensatzes, Dokuments oder der App beschrieben und erklärt ist.", 
         	  "format": "uri"
         	},
+        	"attribution_text": {
+        	  "type": "string", 
+              "required": false, 
+        	  "description": "Namensnennungs-Text: Der exakte Text, der im Rahmen der Namensnennung anzugeben ist."
+        	},
         	"is_free_to_use": {
         	  "type": "boolean", 
               "required": false, 
