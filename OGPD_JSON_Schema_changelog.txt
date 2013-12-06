@@ -1,3 +1,8 @@
+2013-12-06 GeoJSON Koordinatenformat angepasst
+  - das aktuelle GeoJSON Format für Polygon ist ein zweifach geschachteltes Array und nicht einfach
+  - siehe: http://www.geojson.org/geojson-spec.html#id4
+  - dementsprechend wurde extras.spatial.coordinates angepasst
+
 2012-09-25 /prototyp/doc/metadaten/120925-post-harvesting-workshop.pdf eingearbeitet, insb.
   - kontakte als liste mit rollenbezeichner
   - nicht-ckan-core-felder in extras verschoben
