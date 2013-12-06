@@ -90,11 +90,12 @@
                   15.02,
                   47.16
               ]
-            ]
+            ],
+          "ags": "12064",
+          "nuts": "DE413",
+          "uri": "http://dbpedia.org/resource/Landkreis_M%C3%A4rkisch-Oderland"
         },
         "spatial-text": "Märkisch-Oderland 12 0 64",
-        "spatial-code": "DE413/12064",
-        "spatial-uri": "http://dbpedia.org/resource/Landkreis_M%C3%A4rkisch-Oderland",
         "geographically_granularity": "land",
         "temporal_coverage_from" : "2013-02-25T20:56:16",
         "temporal_coverage_to" : "2013-05-25T00:00:00",
