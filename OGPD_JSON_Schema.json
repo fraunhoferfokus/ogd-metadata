@@ -323,7 +323,7 @@
     "ogd_version": {
           "required": false, 
           "description": "Struktur-Version: Zeigt an, in welcher Version der OGD Metadaten-Struktur das Metadatum geschrieben ist. Wird nur intern verwendet, um nach Änderungen dieser Struktur festzustellen, ob die Metadaten schon angepasst wurden.", 
-          "enum": ["v1.1"],
+          "enum": ["v1.0", "v1.1"],
           "type": "string"
     }
       }
