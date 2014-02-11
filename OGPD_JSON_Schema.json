@@ -221,7 +221,7 @@
           "required": false, 
           "description": "Original-Metadaten-Schlüssel: Der Identifier des ursprünglichen Metadateneintrags der Datensätze oder der Dokumente. Damit kann schnell die Originalposition von geharvesteten Datensätzen oder Dokumenten nachvollzogen und Dubletten erkannt werden. Wird nicht in der Oberfläche angezeigt.",
           "type": "string"
-    }, 
+    },
     "metadata_original_xml": {
           "required": false, 
           "description": "Original-Metadaten-XML: URL des Original-Metadateneintrags in der urspruenglichen Form. Wird nicht in der Oberfläche angezeigt. Erscheint als Link in der Detailseite.", 
@@ -233,6 +233,12 @@
           "description": "Original-Metadaten-HTML: URL des Original-Metadateneintrags in der HTML-Represantationsform. Erscheint als Link in der Detailseite.", 
           "type": "string", 
           "format": "uri"
+    },
+    "metadata_transformer": {
+        "required": false,
+        "enum": ["author", "harvester"],
+        "type": "string",
+        "description": "Metadaten-Transformator: Dubletten von transformierten Metadaten werden über die 'metadata_original_id' identifiziert. In diesem Fall werden durch den Autor bereitgestellte Metadaten bevorzugt."
     },
     "spatial": {
           "required": false, 
