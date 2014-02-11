@@ -90,10 +90,13 @@
                   15.02,
                   47.16
               ]
-            ]],
+            ]]
+        },
+        "spatial_reference": {
           "ags": "12064",
           "nuts": "DE413",
-          "uri": "http://dbpedia.org/resource/Landkreis_M%C3%A4rkisch-Oderland"
+          "uri": "http://dbpedia.org/resource/Landkreis_M%C3%A4rkisch-Oderland",
+          "text": "Märkisch Oderland"
         },
         "spatial-text": "Märkisch-Oderland 12 0 64",
         "geographically_granularity": "land",
