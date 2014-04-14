@@ -14,11 +14,45 @@
   - siehe: http://www.geojson.org/geojson-spec.html#id4
   - dementsprechend wurde extras.spatial.coordinates angepasst
 
-2012-09-25 /prototyp/doc/metadaten/120925-post-harvesting-workshop.pdf eingearbeitet, insb.
-  - kontakte als liste mit rollenbezeichner
-  - nicht-ckan-core-felder in extras verschoben
-  - deutsche beschreibungen weitgehend aus folien übernommen
-  - geographical coverage - bzw. Amtlicher Gemeindeschlüsssel
+2013-03-27
+- Geodaten-Nutzungsverordnung hinzugefügt.
+
+2013-02-28
+- CC-BY-ND aufgenommen
+
+2013-02-08
+- Konsolidierung mit Österreich mit Hinblick auf das OD-Portal der Europäischen Kommission
+  - license_id wieder zu den Kernfeldern verschoben.
+  - Veröffentlichende Stelle und Ansprechpartner wieder in die Kernfelder verschoben.
+
+2013-02-08
+- Geolizenz Ia konservativ erst einmal als nicht-offen eingestuft.
+
+2013-01-22
+- Lizenz hinzugefügt: Datenlizenz DE NC
+
+2013-01-22
+- Lizenzen hinzugefügt: ODC-BY
+
+2013-01-18
+- Lizenzen hinzugefügt: Geolizenzen, PDDL, Daten-Lizenz DE, Amtliches Werk
+
+2012-12-21
+- images eingeführt v.a. im Hinblick auf App-Bilder
+
+2012-11-28
+- temporal_granularity_factor eingefuehrt.
+
+2012-11-21
+- Lizenzliste korrigiert: notspecified gestrichen, other-open und other-closed eingeführt für andere freie und eingeschränkte Bestimmungen.
+
+2012-11-14
+- Feld content_type umbenannt in type und nach oben in Hauptebene verschoben.
+
+2012-10-10
+- nicht-ckan-core-felder wieder in extras verschoben
+- enum URL-freundliche Bezeichner, kleingeschrieben
+- spatial und spatial-text statt geographical-coverage und regional-coverage
 
 2012-10-07
 - die Kategorien stimmten nicht mit dem letzten Stand ueberein --> aktualisiert
@@ -31,42 +65,9 @@
 - ich habe nach den Diskussion in Wien noch ein optionales Feld fuer die Version der Metadaten-Struktur aufgenommen 
 - ein jedes Hauptfeld faengt nun mit required ja/nein und description an
 
-2012-10-10
-- nicht-ckan-core-felder wieder in extras verschoben
-- enum URL-freundliche Bezeichner, kleingeschrieben
-- spatial und spatial-text statt geographical-coverage und regional-coverage
+2012-09-25 /prototyp/doc/metadaten/120925-post-harvesting-workshop.pdf eingearbeitet, insb.
+  - kontakte als liste mit rollenbezeichner
+  - nicht-ckan-core-felder in extras verschoben
+  - deutsche beschreibungen weitgehend aus folien übernommen
+  - geographical coverage - bzw. Amtlicher Gemeindeschlüsssel
 
-2012-11-14
-- Feld content_type umbenannt in type und nach oben in Hauptebene verschoben.
-
-2012-11-21
-- Lizenzliste korrigiert: notspecified gestrichen, other-open und other-closed eingeführt für andere freie und eingeschränkte Bestimmungen.
-
-2012-11-28
-- temporal_granularity_factor eingefuehrt.
-
-2012-12-21
-- images eingeführt v.a. im Hinblick auf App-Bilder
-
-2013-01-18
-- Lizenzen hinzugefügt: Geolizenzen, PDDL, Daten-Lizenz DE, Amtliches Werk
-
-2013-01-22
-- Lizenzen hinzugefügt: ODC-BY
-
-2013-01-22
-- Lizenz hinzugefügt: Datenlizenz DE NC
-
-2013-02-08
-- Geolizenz Ia konservativ erst einmal als nicht-offen eingestuft.
-
-2013-02-08
-- Konsolidierung mit Österreich mit Hinblick auf das OD-Portal der Europäischen Kommission
-  - license_id wieder zu den Kernfeldern verschoben.
-  - Veröffentlichende Stelle und Ansprechpartner wieder in die Kernfelder verschoben.
-
-2013-02-28
-- CC-BY-ND aufgenommen
-
-2013-03-27
-- Geodaten-Nutzungsverordnung hinzugefügt.
