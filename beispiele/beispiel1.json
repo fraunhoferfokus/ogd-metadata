@@ -67,6 +67,7 @@
         "metadata_original_id": "01043a74-ca8c-783b-5541",
         "metadata_original_xml": "http://www.example.com/bundesamt/beispieldaten/csw?record=01043a74-ca8c-783b-5541",
         "metadata_original_html": "http://www.example.com/bundesamt/beispieldaten/01043a74-ca8c-783b-5541",
+        "metadata_transformer": "author",
         "spatial": {
             "type": "polygon",
             "coordinates": [[
