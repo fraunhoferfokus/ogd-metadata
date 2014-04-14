@@ -261,11 +261,32 @@
               }
             }
           }
-    }, 
-    "spatial-text": {
-          "required": false, 
-          "description": "Abdeckung als Text: Abgedecktes Gebiets, wenn möglich der Amtliche Gemeindeschlüssel. Wird später für eine geographische Suche verwendet.", 
-          "type": "string"
+    },
+    "spatial_reference": {
+        "required": false,
+        "description": "Räumliche Abdeckung der Datensätzen: Kann durch verschiedene Nomenklaturen oder Standards beschrieben werden.",
+        "type": "object",
+        "properties": {
+            "ags": {
+              "description": "Geographische Abdeckung durch den Amtlichen Gemeindeschlüssel (AGS).",
+              "type": "string",
+              "pattern": "^[0-9 ]*$"
+            },
+            "nuts": {
+              "description": "Geographische Abdeckung durch NUTS-Code",
+              "type": "string",
+              "pattern": "^[A-Z]{2}[0-9A-Z]{0,3}$"
+            },
+            "uri": {
+              "description": "Linked Data Ressource die per URI identifiziert ist und der geographischen Abdeckung entspricht.",
+              "type": "string",
+              "format": "uri"
+            },
+            "text": {
+              "description": "Abdeckung als Freitext falls keine der Nomenklaturen oder Standards verwendet werden können.", 
+              "type": "string"
+            }
+          }
     }, 
     "geographical_granularity": {
           "required": false, 
