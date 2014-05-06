@@ -252,13 +252,15 @@
             }, 
             "coordinates": {
               "type": "array",
-              "description": "Liste der LinearRing Koordinaten-Liste",
+              "description": "Liste der LinearRing Koordinaten-Liste. Dabei ist zu beachten, dass der erste Eintrag den äußeren Ring darstellt und die folgenden Einträge innere Ringe oder Löcher darstellen.",
               "items": {
                 "type": "array", 
                 "description": "Koordinatenliste die einen LinearRing bildet",
                 "items": {
                   "type": "array",
                   "description": "Koordinatenliste bestehend aus x,y Koordinaten",
+                  "minItems": 2,
+                  "maxItems": 2,
                   "items": {
                     "type": "number",
                     "description": "x bzw. y Koordinate"
