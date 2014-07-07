@@ -11,7 +11,21 @@
       "maintainer": "", 
       "status": "active", 
       "title": "Datenlizenz Deutschland Namensnennung", 
-      "url": "http://www.daten-deutschland.de/bibliothek/Datenlizenz_Deutschland/dl-de-by-1.0"
+      "url": "https://www.govdata.de/dl-de/by-1-0"
+    },
+    {
+      "domain_content": true, 
+      "domain_data": true, 
+      "domain_software": false, 
+      "family": "", 
+      "id": "dl-de-by-2.0", 
+      "is_generic": true, 
+      "is_okd_compliant": true, 
+      "is_osi_compliant": false, 
+      "maintainer": "", 
+      "status": "active", 
+      "title": "Datenlizenz Deutschland Namensnennung 2.0", 
+      "url": "https://www.govdata.de/dl-de/by-2-0"
     },
     {
       "domain_content": true, 
@@ -223,7 +237,21 @@
 	    "maintainer": "", 
 	    "status": "active", 
 	    "title": "Datenlizenz Deutschland Namensnennung nicht-kommerziell", 
-	    "url": "http://www.daten-deutschland.de/bibliothek/Datenlizenz_Deutschland/dl-de-by-nc-1.0"
+	    "url": "https://www.govdata.de/dl-de/by-nc-1-0"
+	  },
+	  {
+	    "domain_content": true, 
+	    "domain_data": true, 
+	    "domain_software": false, 
+	    "family": "", 
+	    "id": "dl-de-by-nc-2.0", 
+	    "is_generic": true, 
+	    "is_okd_compliant": false, 
+	    "is_osi_compliant": false, 
+	    "maintainer": "", 
+	    "status": "active", 
+	    "title": "Datenlizenz Deutschland Namensnennung nicht-kommerziell 2.0", 
+	    "url": "https://www.govdata.de/dl-de/zero-2-0"
 	  },
 	  {
 	    "domain_content": true, 
