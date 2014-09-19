@@ -244,13 +244,13 @@
 	    "domain_data": true, 
 	    "domain_software": false, 
 	    "family": "", 
-	    "id": "dl-de-by-nc-2.0", 
+	    "id": "dl-de-zero-2.0", 
 	    "is_generic": true, 
-	    "is_okd_compliant": false, 
-	    "is_osi_compliant": false, 
+	    "is_okd_compliant": true, 
+	    "is_osi_compliant": true, 
 	    "maintainer": "", 
 	    "status": "active", 
-	    "title": "Datenlizenz Deutschland Namensnennung nicht-kommerziell 2.0", 
+	    "title": "Datenlizenz Deutschland – Zero – Version 2.0", 
 	    "url": "https://www.govdata.de/dl-de/zero-2-0"
 	  },
 	  {
