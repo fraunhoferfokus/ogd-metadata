@@ -110,7 +110,7 @@
       } 
     },
     "license_id": {
-  	  "enum": ["apache", "app_commercial", "app_freeware", "app_opensource", "bsd-license", "cc-by", "cc-by-sa", "cc-nc", "cc-by-nd", "cc-zero", "dl-de-by-1.0", "dl-de-by-nc-1.0", "geolizenz-v1.2.1-open", "geolizenz-v1.2-1a", "geolizenz-v1.2-1b", "geolizenz-v1.2-2a", "geolizenz-v1.2-2b", "geolizenz-v1.2-3a", "geolizenz-v1.2-3b", "geolizenz-v1.2-4a", "geolizenz-v1.2-4b", "geonutzv-de-2013-03-19", "gfdl", "gpl-3.0", "mozilla", "odc-by", "odc-odbl", "odc-pddl", "official-work", "other-closed", "other-open"], 
+  	  "enum": ["apache", "app_commercial", "app_freeware", "app_opensource", "bsd-license", "cc-by", "cc-by-sa", "cc-nc", "cc-by-nd", "cc-zero", "dl-de-by-1.0", "dl-de-by-nc-1.0", "dl-de-by-nc-2.0", "dl-de-by-2.0","geolizenz-v1.2.1-open", "geolizenz-v1.2-1a", "geolizenz-v1.2-1b", "geolizenz-v1.2-2a", "geolizenz-v1.2-2b", "geolizenz-v1.2-3a", "geolizenz-v1.2-3b", "geolizenz-v1.2-4a", "geolizenz-v1.2-4b", "geonutzv-de-2013-03-19", "gfdl", "gpl-3.0", "mozilla", "odc-by", "odc-odbl", "odc-pddl", "official-work", "other-closed", "other-open"], 
       "type": "string", 
       "required": true, 
       "description": "Lizenz-ID: Lizenz aus einer festen Liste, s.u. bzw. <a href='https://github.com/fraunhoferfokus/ogd-metadata/blob/master/lizenzen/deutschland.json'>Liste</a>"
