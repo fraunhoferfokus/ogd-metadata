@@ -1,3 +1,7 @@
+2014-09-22 Datenlizenz Deutschland 2.0 hinzugefügt
+  - dl-de-zero-2.0, Datenlizenz Deutschland – Zero – Version 2.0
+  - dl-de-by-2.0, Datenlizenz Deutschland Namensnennung 2.0
+
 2014-02-11 Felder zur Beschreibung der räumlichen Abdeckung
   - Feld extras.spatial_reference hinzugefügt
   - räumliche Abdeckung nun zusätzlich bechreibbar durch AGS, NUTS und URI
