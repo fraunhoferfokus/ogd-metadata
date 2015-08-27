@@ -497,5 +497,33 @@
     "status": "active", 
     "title": "Andere eingeschränkte Lizenz", 
     "url": ""
-  }
+  },
+  {
+"domain_content": true,
+"domain_data": true,
+"domain_software": false,
+"family": "",
+"id": "geonutz-be-2013-10-01",
+"is_generic": true,
+"is_okd_compliant": true,
+"is_osi_compliant": false,
+"maintainer": "",
+"status": "active",
+"title": "Nutzungsbestimmungen für die Bereitstellung von Geodaten des Landes Berlin",
+"url": "http://www.stadtentwicklung.berlin.de/geoinformation/download/nutzIII.pdf"
+},
+{
+"domain_content": true,
+"domain_data": true,
+"domain_software": false,
+"family": "",
+"id": "cc-pdm-1.0",
+"is_generic": true,
+"is_okd_compliant": true,
+"is_osi_compliant": false,
+"maintainer": "",
+"status": "active",
+"title": " Public Domain Mark 1.0 (PDM)",
+"url": "http://creativecommons.org/publicdomain/mark/1.0/"
+}
 ]
