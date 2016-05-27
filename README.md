@@ -6,6 +6,8 @@ Metadata structure and documentation to be used by the German Open Government Pl
 
 Die Idee hinter der OGD Metadaten-Struktur ist [im Blog beschrieben][ogdm-blog].
 
+**Hinweis:** Dieses Repository wird nicht mehr für die Weiterentwicklung von GovData genutzt. Für Fragen, Anregungen und Diskussionen bzgl. GovData (www.govdata.de) nutzen Sie bitte die hier zur Verfügung gestellten Repositories: https://github.com/GovDataOfficial
+
 Es existiert eine [lesbare HTML Ansicht][ogdm-html].
 
 Relevante Links zur CKAN-Dokumentation:
